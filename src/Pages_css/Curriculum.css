@@ -1,0 +1,38 @@
+.Curriculum{
+    padding-top: 10px;
+}
+
+table{
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+.Curriculum h2{
+    text-align: center;
+}
+
+.Curriculum table,tr,td{
+    border: 5px rgb(3, 3, 99) solid;
+    border-collapse: collapse;
+    padding: 10px 20px;
+    font-size: 36px;
+    border-radius: 10px;
+}
+
+.Curriculum button{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+.Curriculum li{
+    font-size: 18px;
+    padding:10px 20px;
+}
+
+.pythonprog_none,.sql_none,.ml_none,.ds_none,.dl_none{
+    display: none;
+}
+.pythonprog_block,.sql_block,.ml_block,.ds_block,.dl_block{
+    display: block;
+}

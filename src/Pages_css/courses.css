@@ -1,0 +1,125 @@
+
+
+*{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.body{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+}
+
+
+
+.set1{
+    padding: 5px 10px;
+    display: inline-block;
+    
+}
+
+
+.set2{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.set3{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.set4{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.set{
+    margin-top: 30px;
+}
+
+.coursename{
+    border: solid rgb(54, 49, 49) 1px;
+    background-color: blue;
+    border-radius: 3px;
+    width: 200px;
+    height: 180px;
+    font-size: 80px;
+    box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.coursename:hover{
+    color:white;
+    background-color: blue;
+    opacity:1;
+}
+
+
+
+.coursedetails{
+    border: solid rgb(54, 49, 49) 1px;
+    font-size: 60px;
+    width:200px;
+    height: 180px;
+    /* box-shadow: 0 40px 8px 0 rgba(0, 0, 0, 0.2), 0 60px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+.coursedetails h3{
+    padding: 4px 10px;
+    font-family: 'Exo', sans-serif;
+}
+
+.body h2{
+    font-size: 45px;
+    text-align: center;
+}
+
+.links{
+   
+    color: white;
+    text-align: center;
+         font-family: 'Exo', sans-serif;
+    font-size: 20px; 
+    text-decoration: none;
+    padding: 20px 5px;
+    display:flex;
+    line-height: 200%;
+}
+
+
+
+.view-button1,.view-button2,.view-button3,.view-button4{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right:40px;
+    margin-left:50px;
+    margin-top: 30px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+  padding: 10px 15px;
+  color:white;
+  font-weight: bold;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:100px){
+    
+}
+
+
+
+

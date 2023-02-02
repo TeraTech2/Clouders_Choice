@@ -1,0 +1,271 @@
+.service{
+  width:100vw;
+  position: relative;
+}
+
+@media screen and (min-width: 200px){
+  .service{
+    height: 45vh;
+  }
+}
+
+@media screen and (min-width: 500px){
+  .service{
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .service{
+    height: 90vh;
+  }
+}
+
+
+@media screen and (min-width: 1500px){
+  .service{
+    height: 100vh;
+  }
+}
+
+.service .wrapper{
+  width:100%;
+  height: 100%;
+  background: linear-gradient(#0000009a, #0000003a), url("/src/Images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size:  cover;
+  background-position: center center;
+  font-family: "Poppins", "sans-serif";
+  }
+
+  .service .wrapper .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+
+
+
+
+
+
+
+
+
+
+
+.carousel-fade{
+  width: 100%;
+  top: 0;
+  z-index: -1 !important;
+  /* overlay:auto !important; */
+}
+
+
+.home-section-three{
+background-image: url("https://2hymno3yb6w22n87ps12dv02-wpengine.netdna-ssl.com/wp-content/themes/pcs/svg/red_nodes.svg");
+background-position: center center;
+background-repeat: repeat-x;
+height: 198px;
+}
+
+.bg-img-1 {
+background-color: #5F66CF;
+}
+.bg-img-2 {
+ background-color: #CA62C1;
+}
+.bg-img-3 {
+ background-color: #FF6C9E;
+}
+
+
+.nav-link{
+color:rgb(8, 8, 8);
+font-weight: bold;
+}
+
+.card {
+margin: 0 auto; /* Added */
+float: none; /* Added */
+margin-bottom: 10px; /* Added */
+}
+
+.home-page-header{
+text-align: center;
+color: white;
+}
+ 
+.home-select-button{
+background: #fff;
+  border-radius: 45px;
+  padding: 20px 10px 20px 10px;
+  font-size: large;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  max-width: 380px;
+  border: none;
+}
+
+.home-tagline{
+font-size:20px;
+}
+
+.home-heading{
+font-size: 74px;
+line-height: 72px;
+font-weight: 100;
+}
+
+.block{
+display: block;
+}
+
+.headline-style-8{
+color:white;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 1px;
+line-height: 19px;
+text-transform: uppercase;
+}
+
+.center{
+text-align: center;
+}
+
+/* .double-arrow{ 
+background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 0 1px 10px 2px rgb(0 0 0 / 14%);
+  display: inline-block;
+  height: 58px;
+  left: calc((100% - 58px)/ 2);
+  margin: -29px auto 0;
+  position: absolute;
+  text-align: center;
+  width: 58px;
+  box-sizing: inherit;
+} */
+
+.fas{
+display:block;
+}
+
+.fa-angle-double-down{
+color: #00008b;
+position: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+font-size: x-large;
+} 
+
+.fas{
+display: inline-block;
+padding-left: 1px;
+} 
+
+.fa-chevron-down{
+size: 1px;
+}  
+
+.fas{
+display: inline-block;
+padding-right: 1px;
+}
+
+.fa-arrow-right{
+size: 1px;
+}
+
+.test-link{
+cursor: pointer;
+color: black;
+}
+
+
+
+.display-4 {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 70px;
+  color: #5F66CF;
+  margin-top: 3px;
+  width: 100%;
+  box-sizing: inherit;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+.text-left {
+  font-size: 18px ;
+  font-weight: 450;
+  color: gray;
+}
+ 
+.blue {
+  background: -webkit-linear-gradient(#5F66CF, #FF6C9E);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.btn-outline-info {
+  background-image: linear-gradient(#5F66CF, #5F66CF);
+  color: white;
+}
+
+.link-active-1 {
+  color: #FF6C9E;
+}
+
+
+/* ABOUT US SECTION */
+
+.aboutus-section-home{
+  width: 100%;
+  background-color: #eaeaea;
+}
+.aboutus-section-home .heading{
+  border-left: 5px solid #0096FF;
+}
+
+.aboutus-section-home .main-content div p{
+  text-align: justify;
+  padding: 0 5px;
+}
+
+.aboutus-section-home .main-content .about-img-div{
+  width: 600px;
+}
+
+.aboutus-section-home .main-content .about-img-div img{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width:1250px) {
+  .aboutus-section-home .main-content .about-img-div{
+    width: 500px;
+  }
+}
+@media screen and (max-width:1010px) {
+  .aboutus-section-home .main-content .about-img-div{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:1010px) {
+  .aboutus-section-home .main-content .about-img-div{
+    width: 600px;
+  }
+}
+
+
+

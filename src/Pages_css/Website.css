@@ -1,0 +1,57 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.website {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+#carouselExampleIndicators{
+  z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+
+.website .footer h1{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.website .footer h4{
+    text-align: center;
+}
+
+.website .details h5{
+  background-color:#0096FF;
+  width:100%;
+  color:white;
+  }
+
+  .advantages div div .justify{
+    text-align: justify;
+  }
+
+  @media screen and (max-width:780px){
+    #carouselExampleIndicators .carousel-inner .carousel-item{
+      height: 380px;
+    }
+  }
+
+  @media screen and (max-width:580px){
+    #carouselExampleIndicators .carousel-inner .carousel-item{
+      height: 300px;
+    }
+  }
+
+  @media screen and (max-width:460px){
+    #carouselExampleIndicators .carousel-inner .carousel-item{
+      height: 250px;
+    }
+  }

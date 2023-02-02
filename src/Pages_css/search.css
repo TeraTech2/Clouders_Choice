@@ -1,0 +1,43 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.find{
+    /* padding: 36px 72px; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.box h4{
+    background-color: blue;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: center;   
+}
+
+.Search{
+    /* padding-left: 20%; */
+    /* height: 25px; */
+}
+.Search input{
+    padding: 5px;
+    padding-right: 100px;
+    border: solid rgb(56, 56, 105) 1px;
+    border-radius: 5px;    
+}
+
+
+@media screen and (max-width:1115px){
+    .find{
+        width: 80%;
+        margin-top: 50px;
+    }
+    .Search input{
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+@import "./partials/flex";
+
+.blogs_wrapper{
+    width: 100%;
+    overflow: auto;
+    @include flex(row,flex-start,flex-start);
+    .blog{
+        position: relative;
+        &::after{
+            content: "";
+            width: 0%;
+            height: 5px;
+            background-color: #007BFC;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 1px;
+            transition: width .3s ease-in-out;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+    &::-webkit-scrollbar{
+        height: 3px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #999999d0;
+        border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #555;
+        border-radius: 30%;
+    }
+}

@@ -1,0 +1,31 @@
+.FutureScope .row .brandImgDiv{
+    max-width: 250px;
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.FutureScope .row .brandImgDiv img{
+    width: 100%;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:550px) {
+    .FutureScope .row .brandImgDiv{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .FutureScope .row .brandImgDiv{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .FutureScope .row .brandImgDiv{
+        width: 250px;
+    }
+}

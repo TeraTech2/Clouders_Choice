@@ -1,0 +1,27 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Test h2{
+    text-align: center;
+}
+
+.Test img{
+    width: 70px;
+    height: 70px;
+}
+
+.Test h4{
+    padding-top: 10px;
+    padding-left: 120px;
+}
+.Test section{
+    display: inline-block;
+    padding: 10px 90px;
+}
+
+.Test{
+    padding: 10px 40px
+}
+

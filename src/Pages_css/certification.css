@@ -1,0 +1,16 @@
+
+.certification h3{
+    text-align: center;
+}
+
+.certification{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.contents{ 
+    border: black solid 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

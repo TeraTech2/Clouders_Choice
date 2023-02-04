@@ -2,7 +2,6 @@ import React from 'react'
 import CloudBin from '../components/CloudBin'
 import Hero from '../components/Hero'
 import ImagesSection from '../components/ImagesSection'
-// import Navbar from '../components/Navbar'
 import '../styles/main.css'
 
 const Home = () => {

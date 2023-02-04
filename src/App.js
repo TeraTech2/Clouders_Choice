@@ -1,29 +1,31 @@
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 import "./Pages_css/App.css";
-import Home from "./Home";
+import Home from "./pages/Home";
 import Office365Home from "./Office365/pages/Home";
-import Website from "./Website";
-import Footer from "./Footer";
-import Contact from "./ContactUs";
-import MobileAppDevelopment from "./MobileAppDevelopment";
-import Azure from "./Azure";
-import AWS from "./AWS";
-import GCP from "./GCP";
-import Consulting from "./Consulting";
-import Courses from './content.js';
-import Datascience from './python_datascience.js';
-import Python from './python.js';
-import ML from './machinelearning.js';
-import Web from './webdevlop.js';
-import About from "./About";
+import Website from "./pages/Website";
+import Footer from "./components/Footer";
+import Contact from "./pages/ContactUs";
+import MobileAppDevelopment from "./pages/MobileAppDevelopment";
+import Azure from "./pages/Azure";
+import AWS from "./pages/AWS";
+import GCP from "./pages/GCP";
+import Consulting from "./pages/Consulting";
+import Courses from './pages/Courses.js';
+import Datascience from './pages/python_datascience.js';
+import Python from './pages/python.js';
+import ML from './pages/machinelearning.js';
+import Web from './pages/webdevlop.js';
+import About from "./pages/About";
 import MainOutlet from './components/MainOutlet';
+import ScrollToTop from "./components/ScrollToTop";
 
 <Link to='/posts'>Posts</Link>;
 
 function App() {
     return (
         <Router>
+            <ScrollToTop/>
             <Routes>
                 {/* Nested + Shared routes */}
                 <Route path="/" element={<MainOutlet/>}>

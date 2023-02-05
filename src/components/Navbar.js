@@ -50,7 +50,7 @@ export const Navbar = () => {
             <div className='d-flex flex-row justify-content-between align-items-center'
                 style={{position:"sticky", top:0, left:0, zIndex:100, background:"#fff"}}>
                 <NavLink className="nav-link" to="/">
-                    <img src={i1} width="200px" alt=""></img>
+                    <img src={i1} width="80px" alt=""></img>
                 </NavLink>
                 <button className='btn hamburger' disabled={hamburger} style={{ boxShadow: "none" }} onClick={handleOpen}>
                     <i className={`bi fs-2 bi-list`}></i>
@@ -67,7 +67,7 @@ const NavbarForWideScreen = ({isSticky, handleOpen, hamburger, hamIcon}) => {
     <div className='w-100 d-flex align-items-center justify-content-between'>
         <div className="nav-logo">
             <NavLink className="nav-link" to="/">
-                <img src={i1} width="200px" alt=""></img>
+                <img src={i1} width="90px" alt=""></img>
             </NavLink>
         </div>
 
@@ -169,7 +169,7 @@ const NavbarForSmallScreen = ({handleOpen, hamburger, hamIcon}) => {
         <nav className={`nav-mobile ${hamburger && "active"}`}>
             <div className="nav-mobile-header d-flex flex-row justify-content-between align-items-center">
                 <NavLink className="nav-link" to="/" onClick={handleOpen}>
-                    <img src={i1} width="200px" alt="logo"></img>
+                    <img src={i1} width="70px" alt="logo"></img>
                 </NavLink>
 
                 <button className='btn hamburger' style={{ boxShadow: "none" }} onClick={handleOpen}>

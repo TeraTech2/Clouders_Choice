@@ -100,7 +100,7 @@ const Footer = () => {
               <p>
                 <i className="bi bi-geo-alt-fill"></i> Chennai, India</p>
               <p className="change">
-                <i className="bi bi-envelope-fill"></i> support@teratechservices.com </p>
+                <i className="bi bi-envelope-fill"></i> support@clouderschoice.com </p>
               <p>
                 <i className="bi bi-telephone-fill"></i> + 91 8667239438</p>
             </motion.div>
@@ -113,7 +113,7 @@ const Footer = () => {
             <div className="col-md-7 col-lg-8">
               <p className="text-center text-md-left">© 2022 Copyright:
                 <NavLink to="/">
-                  <strong> TeraTechServices.com</strong>
+                  <strong> CloudersChoice.com</strong>
                 </NavLink>
               </p>
             </div>

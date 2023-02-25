@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.153d88a6.css",
-    "main.js": "/static/js/main.d3c7d3ea.js",
+    "main.css": "/static/css/main.0bfe1145.css",
+    "main.js": "/static/js/main.d5e97583.js",
     "static/media/ems3.PNG": "/static/media/ems3.0d280f248b30a22e8da6.PNG",
     "static/media/image1.jpg": "/static/media/image1.bbef3cf4349ad6bb3db5.jpg",
     "static/media/Main_image.jpg": "/static/media/Main_image.6db544cbf03454aa4dfb.jpg",
@@ -12,13 +12,13 @@
     "static/media/ems4.PNG": "/static/media/ems4.6b8e93906a5c96421b42.PNG",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
-    "static/media/GCP.jpg": "/static/media/GCP.a89c0bb2de18b54e3cd9.jpg",
+    "static/media/GCP.jpg": "/static/media/GCP.67e9ef8d25010726e6d2.jpg",
     "static/media/Azure.jpg": "/static/media/Azure.1a97603a3c60212bd49d.jpg",
+    "static/media/main-logo.png": "/static/media/main-logo.f09f957e16d50c0b14ed.png",
     "static/media/ems2.PNG": "/static/media/ems2.dc369dd123142a5ff25e.PNG",
     "static/media/MobileAppDevelopment.jpg": "/static/media/MobileAppDevelopment.2c408b3a4f03d3aa3dea.jpg",
     "static/media/contactUS.jpg": "/static/media/contactUS.e95de7a904ab7284db7a.jpg",
     "static/media/cloudcomputing.jpg": "/static/media/cloudcomputing.80116460c899c45423c9.jpg",
-    "static/media/main-logo.png": "/static/media/main-logo.fb622328d00b2165e36f.png",
     "static/media/1.webp": "/static/media/1.ef41481ed6b5423b9400.webp",
     "static/media/2.webp": "/static/media/2.a539ce7d49aa44639688.webp",
     "static/media/Devops.png": "/static/media/Devops.18005bf9ddab27f7a4d4.png",
@@ -52,11 +52,11 @@
     "static/media/p1.PNG": "/static/media/p1.52821e62db87fa4fc7fe.PNG",
     "static/media/p3.PNG": "/static/media/p3.6ab798852895e7221a51.PNG",
     "static/media/p4.PNG": "/static/media/p4.1f41800e02cee5f6f0e3.PNG",
-    "main.153d88a6.css.map": "/static/css/main.153d88a6.css.map",
-    "main.d3c7d3ea.js.map": "/static/js/main.d3c7d3ea.js.map"
+    "main.0bfe1145.css.map": "/static/css/main.0bfe1145.css.map",
+    "main.d5e97583.js.map": "/static/js/main.d5e97583.js.map"
   },
   "entrypoints": [
-    "static/css/main.153d88a6.css",
-    "static/js/main.d3c7d3ea.js"
+    "static/css/main.0bfe1145.css",
+    "static/js/main.d5e97583.js"
   ]
 }

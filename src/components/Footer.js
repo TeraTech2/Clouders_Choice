@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import "../Pages_css/Footer.css";
+// import "../Pages_css/Footer.css";
 import { NavLink } from 'react-router-dom';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion"
@@ -44,14 +44,13 @@ const Footer = () => {
         <div className="container text-center text-md-left">
 
           <div className="row text-center text-md-left mt-3 pb-3">
-            <hr className="w-100 clearfix d-md-none"></hr>
 
             <motion.div
               ref={ref}
               initial="hidden"
               animate={controls}
               variants={variants}
-              className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+              className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3 footer-section">
               <h6 className="text-uppercase mb-4 font-weight-bold">Services</h6>
               <p>
                 <NavLink to="/Consulting">Consulting</NavLink>
@@ -71,7 +70,7 @@ const Footer = () => {
               initial="hidden"
               animate={controls2}
               variants={variants2} 
-              className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+              className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3 footer-section">
               <h6 className="text-uppercase mb-4 font-weight-bold">Technologies</h6>
               <p>
                 <NavLink to="/MicrosoftAzure">Microsoft Azure</NavLink>
@@ -95,11 +94,11 @@ const Footer = () => {
               initial="hidden"
               animate={controls1}
               variants={variants1}
-              className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+              className="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3 footer-section">
               <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
               <p>
                 <i className="bi bi-geo-alt-fill"></i> Chennai, India</p>
-              <p className="change">
+              <p>
                 <i className="bi bi-envelope-fill"></i> support@clouderschoice.com </p>
               <p>
                 <i className="bi bi-telephone-fill"></i> + 91 8667239438</p>
@@ -108,7 +107,7 @@ const Footer = () => {
 
           <hr></hr>
 
-          <div className="row d-flex align-items-center">
+          <div className="row d-flex align-items-center footer-end">
 
             <div className="col-md-7 col-lg-8">
               <p className="text-center text-md-left">© 2022 Copyright:

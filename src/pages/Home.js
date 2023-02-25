@@ -1,11 +1,14 @@
-import React, {useEffect, useRef } from 'react'
-import "../Pages_css/Home.css";
+import React, {useEffect, useRef } from 'react';
 import FutureScope from '../components/FutureScope';
 import CloudServices from '../components/CloudServices';
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "framer-motion"
+import { useInView } from "framer-motion";
+import { useOutletContext } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const Home = () => {
+    const {theme} = useOutletContext();
+
     const controls = useAnimation();
     const ref = useRef(null);
     const inView = useInView(ref, {once:true});
@@ -20,7 +23,7 @@ const Home = () => {
     }, [inView])
     
     return (
-        <div>
+        <div className={`homePage theme-${theme}`}>
             <div className='service'>
                 <div className="wrapper">
                     <motion.div className="content"
@@ -28,9 +31,9 @@ const Home = () => {
                         ref={ref}
                         animate={controls}
                         variants={variants}>
-                        <p className="text-light fs-3">CLOUD MANAGED SERVICES</p>
+                        <p className="fs-3">CLOUD MANAGED SERVICES</p>
                         <div className="line"></div><br />
-                        <p className='text-light fs-5' style={{ textShadow: "1px 1px 1px black" }}> WE HELP BRANDS STAND OUT FROM THE CROWD AND SUCCEED
+                        <p className='fs-5'> WE HELP BRANDS STAND OUT FROM THE CROWD AND SUCCEED
                             <br />WITH OUR INNOVATIVE IDEAS AND TOP-NOTCH SERVICES.</p>
                     </motion.div>
                 </div>
@@ -38,6 +41,7 @@ const Home = () => {
 
             <CloudServices />
             <FutureScope />
+            <Footer />
         </div>
     )
 }

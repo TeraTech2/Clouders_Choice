@@ -1,0 +1,81 @@
+.homePage.theme-dark .FutureScope{
+    background-color: var(--bg-dark);
+    background-color: #000;
+    h2{
+        color: var(--text-light-secondary);
+    }
+    .row .brandImgDiv{
+        max-width: 250px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 0rem;
+        box-shadow: 0px 1px 5px var(--bg-dark-3);
+        filter: drop-shadow(0px 0px 5px var(--bg-dark-3));
+        cursor: pointer;
+        &:nth-child(1){
+            filter: none;
+        }
+        img{
+            width: 100%;
+            max-width: 100px;
+            transition: transform .2s ease-in-out;
+        }
+        &:hover{
+            img{
+                transform: scale(1.07);
+            }
+        }
+    }
+}
+
+.homePage.theme-light .FutureScope{
+    background-color: var(--bg-light);
+    h2{
+        color: var(--text-dark-secondary);
+    }
+    .row .brandImgDiv{
+        max-width: 250px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 0rem;
+        cursor: pointer;
+        box-shadow: 0px 0px 1px var(--text-light-3);
+        filter: drop-shadow(0px 0px 1px var(--bg-dark-3));
+        img{
+            width: 100%;
+            max-width: 100px;
+            transition: transform .2s ease-in-out;
+        }
+        &:hover{
+            img{
+                transform: scale(1.07);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+    .FutureScope .row .brandImgDiv{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .FutureScope .row .brandImgDiv{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .FutureScope .row .brandImgDiv{
+        width: 250px;
+    }
+}

@@ -1,0 +1,80 @@
+.homePage,
+.homePage.theme-light {
+    padding: 0 !important;
+    background-color: var(--bg-light);
+    .service {
+        width: 100%;
+        position: relative;
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#ffffff00, #b9b9b9ae), url("/src/Images/image1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            font-family: "Poppins", "sans-serif";
+
+            .content {
+                position: absolute;
+                top: 40%;
+                right: 1%;
+                p {
+                    color: whitesmoke;
+                    text-shadow: 3px 3px 6px black;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                .content {
+                    top: 55%;
+                    right: 1%;
+                }
+            }
+
+            .line {
+                height: 10px;
+                width: 100px;
+                background-color: #21a4bb;
+            }
+        }
+    }
+}
+
+.homePage,
+.homePage.theme-dark {
+    padding: 0 !important;
+    .service {
+        .wrapper {
+            background: linear-gradient(#0000002b, #000000), url("/src/Images/image1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
+
+@media screen and (min-width: 200px) {
+    .homePage .service {
+        height: 45vh;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .homePage .service {
+        height: 70vh;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .homePage .service {
+        height: 90vh;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .homePage .service {
+        height: 100vh;
+    }
+}

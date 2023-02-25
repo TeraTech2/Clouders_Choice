@@ -1,0 +1,49 @@
+.homePage.theme-dark {
+    footer {
+        background-color: var(--bg-dark);
+
+        .footer-section {
+            h6 {
+                color: var(--text-light);
+            }
+
+            p a,
+            p, i {
+                color: var(--text-light-3);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            p, i{
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        hr{
+            background-color: var(--bg-light);
+        }
+        .footer-end{
+            color: var(--text-light-secondary);
+        }
+    }
+}
+
+.homePage.theme-light {
+    footer {
+        .footer-section {
+            p {
+                a {
+                    color: black;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        hr{
+            background-color: var(--bg-dark);
+        }
+    }
+}

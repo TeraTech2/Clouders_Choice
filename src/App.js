@@ -1,10 +1,8 @@
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import "./Pages_css/App.css";
 import Home from "./pages/Home";
 import Office365Home from "./Office365/pages/Home";
 import Website from "./pages/Website";
-import Footer from "./components/Footer";
 import Contact from "./pages/ContactUs";
 import MobileAppDevelopment from "./pages/MobileAppDevelopment";
 import Azure from "./pages/Azure";
@@ -19,8 +17,7 @@ import Web from './pages/webdevlop.js';
 import About from "./pages/About";
 import MainOutlet from './components/MainOutlet';
 import ScrollToTop from "./components/ScrollToTop";
-
-<Link to='/posts'>Posts</Link>;
+import './sass/Theme/theme.css';
 
 function App() {
     return (
@@ -45,11 +42,7 @@ function App() {
                     <Route path='/Web' exact element={<Web />} />
                     <Route path="/Office365" element={<Office365Home/>}></Route>
                 </Route>
-
             </Routes>
-
-            <Footer />
-
         </Router>
     );
 }

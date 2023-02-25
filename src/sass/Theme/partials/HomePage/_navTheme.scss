@@ -1,0 +1,158 @@
+/* dark theme for navbar */
+.NavbarForWideScreen.theme-dark {
+    background-color: var(--bg-dark);
+
+    li .dropdown .dropbtn {
+        color: var(--text-light);
+
+        .dropdown-content {
+            background-color: var(--bg-dark-secondary);
+        }
+
+        .nav-link {
+            color: var(--text-light);
+
+            &:hover {
+                background-color: var(--bg-dark-3);
+            }
+        }
+    }
+
+    nav ul li>.nav-link,
+    .navigationDivMobile>div ul li>.nav-link {
+        color: var(--text-light);
+        font-weight: normal;
+
+        &:hover {
+            background-color: var(--bg-dark-3);
+        }
+    }
+
+    div .hamburger {
+        color: var(--bg-light);
+    }
+}
+
+/* light theme for navbar */
+.NavbarForWideScreen.theme-light {
+    background-color: var(--bg-light);
+
+    li .dropdown .dropbtn {
+        color: var(--text-dark);
+        font-weight: bold;
+
+        .dropdown-content {
+            background-color: var(--bg-light);
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+
+            &:hover {
+                background-color: var(--text-light-secondary);
+            }
+        }
+    }
+
+    nav ul li>.nav-link,
+    .navigationDivMobile>div ul li>.nav-link {
+        color: var(--text-dark);
+        font-weight: bold;
+
+        &:hover {
+            background-color: var(--bg-light-secondary);
+        }
+    }
+
+    nav ul li .dropdown .nav-link{
+        font-weight: bold;
+    }
+
+    div .hamburger {
+        color: var(--bg-dark);
+    }
+}
+
+// dark theme for mobile navigation
+.NavbarForSmallScreen.theme-dark {
+    .logo-div {
+        background-color: var(--bg-dark);
+    }
+
+    .hamburger {
+        color: var(--bg-light);
+    }
+
+    .nav-mobile.active {
+        background-color: var(--bg-dark);
+
+        .nav-mobile-body {
+            .submenu {
+                .submenu-ddl {
+                    button i {
+                        color: var(--text-light-secondary);
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--bg-dark-secondary);
+                }
+            }
+
+            .nav-link,
+            .submenu .nav-link {
+                color: var(--text-light);
+            }
+
+            .submenu-ddl-list .nav-link:hover {
+                background-color: var(--bg-dark-3);
+            }
+        }
+    }
+}
+
+// light theme for mobile navigation
+.NavbarForSmallScreen.theme-light {
+    .logo-div {
+        background-color: var(--bg-light);
+    }
+
+    .hamburger {
+        color: var(--bg-dark);
+    }
+
+    .nav-mobile.active {
+        background-color: var(--bg-light);
+
+        .nav-mobile-body {
+            .submenu {
+                .submenu-ddl {
+                    button i {
+                        color: var(--text-dark-secondary);
+                    }
+                }
+
+                .submenu-ddl-list {
+                    .nav-link {
+                        &:hover {
+                            background-color: var(--text-light-secondary);
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--bg-light-secondary);
+                }
+            }
+
+            .nav-link,
+            .submenu .nav-link {
+                color: var(--text-dark);
+            }
+
+            >.nav-link:hover {
+                background-color: var(--bg-light-secondary);
+            }
+        }
+    }
+}

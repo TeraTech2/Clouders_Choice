@@ -2,7 +2,6 @@
   z-index: 3999;
   position:fixed;
   top: 0;
-  background-color: #fff;
   width: 100%;
   padding: 0 0px;
   transition: all .2s ease-in-out;
@@ -25,69 +24,18 @@ ul{
 nav ul {
   margin:0 auto;
   text-align:right;
-  /* font-size:1.8rem; */
   font-family: 'Work Sans', sans-serif;
-  color:black;
 }
 
 nav ul li {
   list-style:none;
   display:inline-block;
   margin:0 .8rem;
-  -webkit-transition: all 100ms ease;
--moz-transition: all 100ms ease;
--ms-transition: all 100ms ease;
--o-transition: all 100ms ease;
-transition: all 100ms ease;
   cursor:pointer;
 }
 nav ul li:nth-child(1){
   margin:0 .8rem 0 0;
 }
-
-#link1:hover {
-  -moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
--o-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);
-  
-}
-#link2:hover {
-  -moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
--o-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);
-
-}
-#link3:hover {
-  -moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
--o-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);
-  
-}
-#link4:hover {
-  -moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
--o-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);
- 
-}
-#link5:hover {
-  -moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
--o-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1); 
-}
-.dropbtn {
-    color:black;
-    border: none;
-  }
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
@@ -99,7 +47,6 @@ transform: scale(1.1);
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color:white;
     min-width: 210px;
     text-align:left;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -108,20 +55,14 @@ transform: scale(1.1);
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-size: 14px;
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: rgb(185, 210, 248);}
-  
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
-  
-
 
   .nav-item{
       float: right !important;
@@ -172,9 +113,8 @@ transform: scale(1.1);
 
   /* navbar for mobile */
   .nav-mobile{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: #fff;
     position: fixed;
     top:0;
     left: 0;
@@ -188,7 +128,6 @@ transform: scale(1.1);
   .nav-mobile .nav-mobile-header{
     width: 100vw;
     height: 12vh;
-    background-color: #fff;
     border-bottom: 1px solid #999;
   }
 
@@ -198,7 +137,6 @@ transform: scale(1.1);
   }
 
   .nav-mobile .nav-mobile-body .nav-link{
-    color: #000;
     padding: 1rem .5rem;
     text-decoration: none;
     transition: all .3s;
@@ -206,18 +144,13 @@ transform: scale(1.1);
   }
 
   .nav-mobile .nav-mobile-body .nav-link-hover:hover{
-    background-color: #9999996f;
     padding-left: .7rem;
-  }
-  .submenu-ddl.active{
-    background-color: #9999996f;
   }
 
   .submenu-ddl-list{
     max-height: 0;
     transition: all 0.15s ease-in-out;
     overflow: hidden;
-    background-color: whitesmoke;
   }
 
   .submenu .submenu-ddl-list .nav-link{

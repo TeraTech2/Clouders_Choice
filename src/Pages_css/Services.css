@@ -3,13 +3,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-.service .wrapper .line{
-  height:10px;
-  width:100px;
-  background-color: orange;
-}
-
 .homeServicesItemText p{
   text-align: justify;
 }

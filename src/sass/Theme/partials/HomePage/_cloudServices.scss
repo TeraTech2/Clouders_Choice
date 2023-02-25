@@ -1,0 +1,41 @@
+.homePage.theme-dark{
+    .CloudServicesWrapper{
+        background-color: var(--bg-dark);
+        h3{
+            color: var(--text-light-secondary);
+        }
+    }
+    .CloudServicesBody{
+        padding: 1rem;
+        .CloudServicesItem{
+            .CloudServicesItemText{
+                color: var(--text-light-secondary);
+                line-height: 1.7rem;
+                p{
+                    color: var(--text-light-3);
+                }
+            }
+        }
+    }
+}
+
+.homePage.theme-light{
+    .CloudServicesWrapper{
+        background-color: var(--bg-light);
+        h3{
+            color: var(--text-dark);
+        }
+    }
+    .CloudServicesBody{
+        padding: 1rem;
+        .CloudServicesItem{
+            .CloudServicesItemText{
+                color: var(--text-dark);
+                line-height: 1.7rem;
+                p{
+                    color: var(--text-dark-secondary);
+                }
+            }
+        }
+    }
+}

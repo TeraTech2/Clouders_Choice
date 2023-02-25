@@ -1,0 +1,441 @@
+:root {
+  --bg-dark: #252526;
+  --bg-dark-secondary: #2d2d30;
+  --bg-dark-3: #3e3e42;
+  --text-dark: #000;
+  --text-dark-secondary: #000000b3;
+  --bg-light: #fff;
+  --bg-light-secondary: #f5f5f5d9;
+  --text-light: #FAFAFA;
+  --text-light-secondary: #e0e0e0;
+  --text-light-3: #e0e0e0d6;
+  --theme-btn-light: #F6BE00;
+  --theme-btn-dark: #152238;
+  --logo-color: #21a4bb;
+}
+
+/* dark theme for navbar */
+.NavbarForWideScreen.theme-dark {
+  background-color: var(--bg-dark);
+}
+
+.NavbarForWideScreen.theme-dark li .dropdown .dropbtn {
+  color: var(--text-light);
+}
+
+.NavbarForWideScreen.theme-dark li .dropdown .dropbtn .dropdown-content {
+  background-color: var(--bg-dark-secondary);
+}
+
+.NavbarForWideScreen.theme-dark li .dropdown .dropbtn .nav-link {
+  color: var(--text-light);
+}
+
+.NavbarForWideScreen.theme-dark li .dropdown .dropbtn .nav-link:hover {
+  background-color: var(--bg-dark-3);
+}
+
+.NavbarForWideScreen.theme-dark nav ul li > .nav-link,
+.NavbarForWideScreen.theme-dark .navigationDivMobile > div ul li > .nav-link {
+  color: var(--text-light);
+  font-weight: normal;
+}
+
+.NavbarForWideScreen.theme-dark nav ul li > .nav-link:hover,
+.NavbarForWideScreen.theme-dark .navigationDivMobile > div ul li > .nav-link:hover {
+  background-color: var(--bg-dark-3);
+}
+
+.NavbarForWideScreen.theme-dark div .hamburger {
+  color: var(--bg-light);
+}
+
+/* light theme for navbar */
+.NavbarForWideScreen.theme-light {
+  background-color: var(--bg-light);
+}
+
+.NavbarForWideScreen.theme-light li .dropdown .dropbtn {
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.NavbarForWideScreen.theme-light li .dropdown .dropbtn .dropdown-content {
+  background-color: var(--bg-light);
+}
+
+.NavbarForWideScreen.theme-light li .dropdown .dropbtn .nav-link {
+  color: var(--text-dark);
+}
+
+.NavbarForWideScreen.theme-light li .dropdown .dropbtn .nav-link:hover {
+  background-color: var(--text-light-secondary);
+}
+
+.NavbarForWideScreen.theme-light nav ul li > .nav-link,
+.NavbarForWideScreen.theme-light .navigationDivMobile > div ul li > .nav-link {
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.NavbarForWideScreen.theme-light nav ul li > .nav-link:hover,
+.NavbarForWideScreen.theme-light .navigationDivMobile > div ul li > .nav-link:hover {
+  background-color: var(--bg-light-secondary);
+}
+
+.NavbarForWideScreen.theme-light nav ul li .dropdown .nav-link {
+  font-weight: bold;
+}
+
+.NavbarForWideScreen.theme-light div .hamburger {
+  color: var(--bg-dark);
+}
+
+.NavbarForSmallScreen.theme-dark .logo-div {
+  background-color: var(--bg-dark);
+}
+
+.NavbarForSmallScreen.theme-dark .hamburger {
+  color: var(--bg-light);
+}
+
+.NavbarForSmallScreen.theme-dark .nav-mobile.active {
+  background-color: var(--bg-dark);
+}
+
+.NavbarForSmallScreen.theme-dark .nav-mobile.active .nav-mobile-body .submenu .submenu-ddl button i {
+  color: var(--text-light-secondary);
+}
+
+.NavbarForSmallScreen.theme-dark .nav-mobile.active .nav-mobile-body .submenu:hover {
+  background-color: var(--bg-dark-secondary);
+}
+
+.NavbarForSmallScreen.theme-dark .nav-mobile.active .nav-mobile-body .nav-link,
+.NavbarForSmallScreen.theme-dark .nav-mobile.active .nav-mobile-body .submenu .nav-link {
+  color: var(--text-light);
+}
+
+.NavbarForSmallScreen.theme-dark .nav-mobile.active .nav-mobile-body .submenu-ddl-list .nav-link:hover {
+  background-color: var(--bg-dark-3);
+}
+
+.NavbarForSmallScreen.theme-light .logo-div {
+  background-color: var(--bg-light);
+}
+
+.NavbarForSmallScreen.theme-light .hamburger {
+  color: var(--bg-dark);
+}
+
+.NavbarForSmallScreen.theme-light .nav-mobile.active {
+  background-color: var(--bg-light);
+}
+
+.NavbarForSmallScreen.theme-light .nav-mobile.active .nav-mobile-body .submenu .submenu-ddl button i {
+  color: var(--text-dark-secondary);
+}
+
+.NavbarForSmallScreen.theme-light .nav-mobile.active .nav-mobile-body .submenu .submenu-ddl-list .nav-link:hover {
+  background-color: var(--text-light-secondary);
+}
+
+.NavbarForSmallScreen.theme-light .nav-mobile.active .nav-mobile-body .submenu:hover {
+  background-color: var(--bg-light-secondary);
+}
+
+.NavbarForSmallScreen.theme-light .nav-mobile.active .nav-mobile-body .nav-link,
+.NavbarForSmallScreen.theme-light .nav-mobile.active .nav-mobile-body .submenu .nav-link {
+  color: var(--text-dark);
+}
+
+.NavbarForSmallScreen.theme-light .nav-mobile.active .nav-mobile-body > .nav-link:hover {
+  background-color: var(--bg-light-secondary);
+}
+
+.homePage,
+.homePage.theme-light {
+  padding: 0 !important;
+  background-color: var(--bg-light);
+}
+
+.homePage .service,
+.homePage.theme-light .service {
+  width: 100%;
+  position: relative;
+}
+
+.homePage .service .wrapper,
+.homePage.theme-light .service .wrapper {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), to(#b9b9b9ae)), url("/src/Images/image1.jpg");
+  background: linear-gradient(#ffffff00, #b9b9b9ae), url("/src/Images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Poppins", "sans-serif";
+}
+
+.homePage .service .wrapper .content,
+.homePage.theme-light .service .wrapper .content {
+  position: absolute;
+  top: 40%;
+  right: 1%;
+}
+
+.homePage .service .wrapper .content p,
+.homePage.theme-light .service .wrapper .content p {
+  color: whitesmoke;
+  text-shadow: 3px 3px 6px black;
+}
+
+@media screen and (max-width: 800px) {
+  .homePage .service .wrapper .content,
+  .homePage.theme-light .service .wrapper .content {
+    top: 55%;
+    right: 1%;
+  }
+}
+
+.homePage .service .wrapper .line,
+.homePage.theme-light .service .wrapper .line {
+  height: 10px;
+  width: 100px;
+  background-color: #21a4bb;
+}
+
+.homePage,
+.homePage.theme-dark {
+  padding: 0 !important;
+}
+
+.homePage .service .wrapper,
+.homePage.theme-dark .service .wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000002b), to(#000000)), url("/src/Images/image1.jpg");
+  background: linear-gradient(#0000002b, #000000), url("/src/Images/image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 200px) {
+  .homePage .service {
+    height: 45vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .homePage .service {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .homePage .service {
+    height: 90vh;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .homePage .service {
+    height: 100vh;
+  }
+}
+
+.homePage.theme-dark .CloudServicesWrapper {
+  background-color: var(--bg-dark);
+}
+
+.homePage.theme-dark .CloudServicesWrapper h3 {
+  color: var(--text-light-secondary);
+}
+
+.homePage.theme-dark .CloudServicesBody {
+  padding: 1rem;
+}
+
+.homePage.theme-dark .CloudServicesBody .CloudServicesItem .CloudServicesItemText {
+  color: var(--text-light-secondary);
+  line-height: 1.7rem;
+}
+
+.homePage.theme-dark .CloudServicesBody .CloudServicesItem .CloudServicesItemText p {
+  color: var(--text-light-3);
+}
+
+.homePage.theme-light .CloudServicesWrapper {
+  background-color: var(--bg-light);
+}
+
+.homePage.theme-light .CloudServicesWrapper h3 {
+  color: var(--text-dark);
+}
+
+.homePage.theme-light .CloudServicesBody {
+  padding: 1rem;
+}
+
+.homePage.theme-light .CloudServicesBody .CloudServicesItem .CloudServicesItemText {
+  color: var(--text-dark);
+  line-height: 1.7rem;
+}
+
+.homePage.theme-light .CloudServicesBody .CloudServicesItem .CloudServicesItemText p {
+  color: var(--text-dark-secondary);
+}
+
+.homePage.theme-dark .FutureScope {
+  background-color: var(--bg-dark);
+  background-color: #000;
+}
+
+.homePage.theme-dark .FutureScope h2 {
+  color: var(--text-light-secondary);
+}
+
+.homePage.theme-dark .FutureScope .row .brandImgDiv {
+  max-width: 250px;
+  height: 100px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 0rem;
+  -webkit-box-shadow: 0px 1px 5px var(--bg-dark-3);
+          box-shadow: 0px 1px 5px var(--bg-dark-3);
+  -webkit-filter: drop-shadow(0px 0px 5px var(--bg-dark-3));
+          filter: drop-shadow(0px 0px 5px var(--bg-dark-3));
+  cursor: pointer;
+}
+
+.homePage.theme-dark .FutureScope .row .brandImgDiv:nth-child(1) {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.homePage.theme-dark .FutureScope .row .brandImgDiv img {
+  width: 100%;
+  max-width: 100px;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.homePage.theme-dark .FutureScope .row .brandImgDiv:hover img {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.homePage.theme-light .FutureScope {
+  background-color: var(--bg-light);
+}
+
+.homePage.theme-light .FutureScope h2 {
+  color: var(--text-dark-secondary);
+}
+
+.homePage.theme-light .FutureScope .row .brandImgDiv {
+  max-width: 250px;
+  height: 100px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 0rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 1px var(--text-light-3);
+          box-shadow: 0px 0px 1px var(--text-light-3);
+  -webkit-filter: drop-shadow(0px 0px 1px var(--bg-dark-3));
+          filter: drop-shadow(0px 0px 1px var(--bg-dark-3));
+}
+
+.homePage.theme-light .FutureScope .row .brandImgDiv img {
+  width: 100%;
+  max-width: 100px;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.homePage.theme-light .FutureScope .row .brandImgDiv:hover img {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+@media screen and (max-width: 550px) {
+  .FutureScope .row .brandImgDiv {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .FutureScope .row .brandImgDiv {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .FutureScope .row .brandImgDiv {
+    width: 250px;
+  }
+}
+
+.homePage.theme-dark footer {
+  background-color: var(--bg-dark);
+}
+
+.homePage.theme-dark footer .footer-section h6 {
+  color: var(--text-light);
+}
+
+.homePage.theme-dark footer .footer-section p a,
+.homePage.theme-dark footer .footer-section p, .homePage.theme-dark footer .footer-section i {
+  color: var(--text-light-3);
+}
+
+.homePage.theme-dark footer .footer-section p a:hover,
+.homePage.theme-dark footer .footer-section p:hover, .homePage.theme-dark footer .footer-section i:hover {
+  text-decoration: underline;
+}
+
+.homePage.theme-dark footer .footer-section p:hover, .homePage.theme-dark footer .footer-section i:hover {
+  text-decoration: none;
+}
+
+.homePage.theme-dark footer hr {
+  background-color: var(--bg-light);
+}
+
+.homePage.theme-dark footer .footer-end {
+  color: var(--text-light-secondary);
+}
+
+.homePage.theme-light footer .footer-section p a {
+  color: black;
+}
+
+.homePage.theme-light footer .footer-section p a:hover {
+  text-decoration: underline;
+}
+
+.homePage.theme-light footer hr {
+  background-color: var(--bg-dark);
+}
+/*# sourceMappingURL=theme.css.map */

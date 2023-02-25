@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import "../Pages_css/FutureScope.css";
 import brand1 from "../Images/Brands/AWS.png";
 import brand2 from "../Images/Brands/Azure.png";
 import brand3 from "../Images/Brands/Devops.png";
 import brand4 from "../Images/Brands/Docker.png";
-import brand5 from "../Images/Brands/GCP.jpg";
+import brand5 from "../Images/Brands/GCP.png";
 import brand6 from "../Images/Brands/kubernetes.png";
 import brand7 from "../Images/Brands/M365.png";
 import brand8 from "../Images/Brands/SharePoint.png";
@@ -49,19 +48,19 @@ const FutureScope = () => {
     }, [isInView]);
 
     return (
-        <div className='container-fluid my-5 mx-auto FutureScope'>
+        <div className='container-fluid py-5 FutureScope'>
             <h2 className='text-center'>Our Support Scope</h2>
             <motion.div
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            variants={variants}
-             className="row d-flex align-items-center justify-content-center">
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={variants}
+                className="row d-flex align-items-center justify-content-center">
                 {
                     Object.keys(brandLogos).map(brand => {
                         return (
                             <div className="brandImgDiv mt-5" key={brand}>
-                                <motion.img whileHover={{ scale: 1.1 }} src={brandLogos[brand]} alt={brand} />
+                                <img whileHover={{ scale: 1.1 }} src={brandLogos[brand]} alt={brand} />
                             </div>
                         )
                     })

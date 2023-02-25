@@ -8,11 +8,6 @@
           box-sizing: border-box;
 }
 
-/* body {
-  font-size: 62.5%;
-  font-family: 'Poppins', sans-serif;
-} */
-
 .nav-wrapper {
   padding: 0 .5rem;
   position: -webkit-sticky;

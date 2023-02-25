@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import "../Pages_css/ContactUs.css";
-import "../Pages_css/Home.css";
 import axios from "axios";
 
 const Contact = () => {

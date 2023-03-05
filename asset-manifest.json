@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bfe1145.css",
-    "main.js": "/static/js/main.d5e97583.js",
+    "main.css": "/static/css/main.a74cd429.css",
+    "main.js": "/static/js/main.5cdcbe6c.js",
     "static/media/ems3.PNG": "/static/media/ems3.0d280f248b30a22e8da6.PNG",
     "static/media/image1.jpg": "/static/media/image1.bbef3cf4349ad6bb3db5.jpg",
     "static/media/Main_image.jpg": "/static/media/Main_image.6db544cbf03454aa4dfb.jpg",
@@ -24,7 +24,6 @@
     "static/media/Devops.png": "/static/media/Devops.18005bf9ddab27f7a4d4.png",
     "static/media/ems1.PNG": "/static/media/ems1.96b1a0a4f6b824c59389.PNG",
     "static/media/3.webp": "/static/media/3.6cbd97257b16b528ac6e.webp",
-    "static/media/2.PNG": "/static/media/2.c2ed919097e865d90467.PNG",
     "static/media/support.jpg": "/static/media/support.00451e8618b74c2cd9ec.jpg",
     "static/media/flexible-schedule.jpg": "/static/media/flexible-schedule.c4b63035c6820cef58a5.jpg",
     "static/media/instructor-led.jpg": "/static/media/instructor-led.330cce61f17190086727.jpg",
@@ -34,29 +33,21 @@
     "static/media/self-pace-video.jpg": "/static/media/self-pace-video.ab3af54e389037bbe7bb.jpg",
     "static/media/Visual_Design.svg": "/static/media/Visual_Design.a73037e54c9e1e182fbd8a1fc69011e3.svg",
     "static/media/SQL_Server.png": "/static/media/SQL_Server.25bfdcadd50b9710100e.png",
-    "static/media/4.PNG": "/static/media/4.50e78a1b52e9587c1de7.PNG",
+    "static/media/8.png": "/static/media/8.7dd524f1946ff4f1db88.png",
+    "static/media/2.png": "/static/media/2.3cfaf857fa65b48d1982.png",
+    "static/media/7.png": "/static/media/7.9b3d7d884f7d674fc9b1.png",
     "static/media/Scalable_Products.svg": "/static/media/Scalable_Products.d069ef340136611861f7c83499829dfd.svg",
-    "static/media/8.PNG": "/static/media/8.7ed1159f19270c66eda1.PNG",
     "static/media/Cross-Platform_Mobile_App_dev.svg": "/static/media/Cross-Platform_Mobile_App_dev.bc790047962f0a4b7cc055bd2c2dbd50.svg",
-    "static/media/5.PNG": "/static/media/5.c9ade52a262b476347d9.PNG",
     "static/media/Eficient-Resource-Management.svg": "/static/media/Eficient-Resource-Management.21da62fb93c693cba563a5ef1ec4c98a.svg",
-    "static/media/7.PNG": "/static/media/7.9391d69bd56b58ee244b.PNG",
-    "static/media/1.PNG": "/static/media/1.263dafa1b5ee672ad491.PNG",
     "static/media/Android_Mobile_App_dev.svg": "/static/media/Android_Mobile_App_dev.f51e1d1a028bfea46c9075812a0db373.svg",
-    "static/media/3.PNG": "/static/media/3.6871cf99cfb85202fd9b.PNG",
-    "static/media/6.PNG": "/static/media/6.0f575c67f51b9ff479ac.PNG",
     "static/media/iOS_Mobile_App_dev.svg": "/static/media/iOS_Mobile_App_dev.dfac47b61232480028aa723e608d1fef.svg",
     "static/media/ems6.PNG": "/static/media/ems6.9d88ce3b9b779634539b.PNG",
-    "static/media/p2.PNG": "/static/media/p2.4667689ac3326e7eb14f.PNG",
     "index.html": "/index.html",
-    "static/media/p1.PNG": "/static/media/p1.52821e62db87fa4fc7fe.PNG",
-    "static/media/p3.PNG": "/static/media/p3.6ab798852895e7221a51.PNG",
-    "static/media/p4.PNG": "/static/media/p4.1f41800e02cee5f6f0e3.PNG",
-    "main.0bfe1145.css.map": "/static/css/main.0bfe1145.css.map",
-    "main.d5e97583.js.map": "/static/js/main.d5e97583.js.map"
+    "main.a74cd429.css.map": "/static/css/main.a74cd429.css.map",
+    "main.5cdcbe6c.js.map": "/static/js/main.5cdcbe6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bfe1145.css",
-    "static/js/main.d5e97583.js"
+    "static/css/main.a74cd429.css",
+    "static/js/main.5cdcbe6c.js"
   ]
 }

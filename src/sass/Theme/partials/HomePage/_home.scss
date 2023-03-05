@@ -22,12 +22,28 @@
                 p {
                     color: whitesmoke;
                     text-shadow: 3px 3px 6px black;
+                    font-size: 1.2rem;
                 }
             }
             @media screen and (max-width: 800px) {
                 .content {
                     top: 55%;
                     right: 1%;
+                }
+            }
+            @media screen and (max-width: 505px) {
+                .content {
+                    top: 25%;
+                    right: 1%;
+                }
+            }
+            @media screen and (max-width: 350px) {
+                .content {
+                    top: 10%;
+                    right: 1%;
+                    p{
+                        font-size: 1rem;
+                    }
                 }
             }
 
@@ -40,7 +56,6 @@
     }
 }
 
-.homePage,
 .homePage.theme-dark {
     padding: 0 !important;
     .service {

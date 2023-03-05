@@ -30,9 +30,9 @@ const Home = () => {
                         ref={ref}
                         animate={controls}
                         variants={variants}>
-                        <p className="fs-3">CLOUD MANAGED SERVICES</p>
+                        <p>CLOUD MANAGED SERVICES</p>
                         <div className="line"></div><br />
-                        <p className='fs-5'> WE HELP BRANDS STAND OUT FROM THE CROWD AND SUCCEED
+                        <p> WE HELP BRANDS STAND OUT FROM THE CROWD AND SUCCEED
                             <br />WITH OUR INNOVATIVE IDEAS AND TOP-NOTCH SERVICES.</p>
                     </motion.div>
                 </div>

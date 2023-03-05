@@ -189,6 +189,7 @@
 .homePage.theme-light .service .wrapper .content p {
   color: whitesmoke;
   text-shadow: 3px 3px 6px black;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -199,6 +200,26 @@
   }
 }
 
+@media screen and (max-width: 505px) {
+  .homePage .service .wrapper .content,
+  .homePage.theme-light .service .wrapper .content {
+    top: 25%;
+    right: 1%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .homePage .service .wrapper .content,
+  .homePage.theme-light .service .wrapper .content {
+    top: 10%;
+    right: 1%;
+  }
+  .homePage .service .wrapper .content p,
+  .homePage.theme-light .service .wrapper .content p {
+    font-size: 1rem;
+  }
+}
+
 .homePage .service .wrapper .line,
 .homePage.theme-light .service .wrapper .line {
   height: 10px;
@@ -206,12 +227,10 @@
   background-color: #21a4bb;
 }
 
-.homePage,
 .homePage.theme-dark {
   padding: 0 !important;
 }
 
-.homePage .service .wrapper,
 .homePage.theme-dark .service .wrapper {
   background: -webkit-gradient(linear, left top, left bottom, from(#0000002b), to(#000000)), url("/src/Images/image1.jpg");
   background: linear-gradient(#0000002b, #000000), url("/src/Images/image1.jpg");

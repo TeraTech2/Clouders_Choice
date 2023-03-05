@@ -15,10 +15,16 @@
     --theme-btn-dark: #152238;
 
     --logo-color: #21a4bb;
+    --heading: #21a4bb86;
 }
 
 @import "./partials/HomePage/navTheme";
 @import "./partials/HomePage/home";
 @import "./partials/HomePage/cloudServices";
 @import "./partials/HomePage/futureScope";
-@import "./partials/HomePage/footer"
+@import "./partials/HomePage/contact";
+@import "./partials/HomePage/BlogTemplate";
+@import "./partials/HomePage/homeServices";
+@import "./partials/HomePage/webDev";
+@import "./partials/HomePage/mobileAppDev";
+@import "./partials/HomePage/footer";

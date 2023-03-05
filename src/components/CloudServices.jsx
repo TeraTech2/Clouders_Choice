@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import { CloudServicesData } from '../content/CloudServicesContent';
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "framer-motion"
-import { useOutletContext } from 'react-router-dom';
+import { useInView } from "framer-motion";
+import { ThemeContext } from '../context/Theme';
 
 const CloudServices = () => {
     return (
@@ -23,7 +23,7 @@ export default CloudServices
 
 
 const CloudServicesItem = ({ service, animateX }) => {
-    const { theme } = useOutletContext();
+    const {theme} = useContext(ThemeContext);
 
     const ref = useRef(null);
     const inView = useInView(ref, { once: true });
@@ -50,7 +50,7 @@ const CloudServicesItem = ({ service, animateX }) => {
         </div>
         <div className="CloudServicesItemText mx-md-5 my-sm-3 text-center text-md-start">
             <h4 className='font-weight-bold mb-2'>{service.heading}</h4>
-            <p>{service.desc}</p>
+            <p style={{textAlign:"justify"}}>{service.desc}</p>
         </div>
     </motion.section>
 }

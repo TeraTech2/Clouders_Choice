@@ -2,13 +2,6 @@ import React from 'react';
 import '../Pages_css/courses.css';
 import Searching from './search';
 
-/*
-import { BrowserRouter, Route, Link, Outlet } from 'react-router-dom';
-import datascience from './python_datascience.js';
- <Link to="/" > python </Link>
-<Outlet />
-*/
-
 const Courses = () => {
     return(
         <div className='body'>

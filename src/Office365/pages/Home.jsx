@@ -7,7 +7,6 @@ import '../styles/main.css'
 const Home = () => {
     return (
         <div>
-            {/* <Navbar /> */}
             <Hero />
             <div className="container-fluid">
                 <p className="text-justify fs-6 text-secondary p-1 p-md-4">Cloud IBN M365 migration experts help organisation to smoothly transit to Office 365 and leverage the suite to boost employee performance and collaboration.</p>

@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from 'react'
-// import "../Pages_css/Footer.css";
+import React, { useContext, useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion"
+import { ThemeContext } from '../context/Theme';
 
 const Footer = () => {
+  const {theme} = useContext(ThemeContext);
 
   const controls = useAnimation();
   const controls1 = useAnimation();
@@ -40,7 +41,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="page-footer font-small mdb-color py-2">
+      <footer className={`page-footer font-small mdb-color py-2 theme-${theme}`}>
         <div className="container text-center text-md-left">
 
           <div className="row text-center text-md-left mt-3 pb-3">
@@ -121,22 +122,22 @@ const Footer = () => {
               <div className="text-center text-md-right">
                 <ul className="list-unstyled list-inline">
                   <li className="list-inline-item">
-                    <NavLink className="btn-floating btn-md rgba-white-slight mx-1" to={""}>
-                      <i className="bi bi-facebook"></i>
+                    <NavLink className="btn-floating btn-md rgba-white-slight mx-1" to={""} title="Facebook">
+                      <i className="bi bi-facebook text-primary"></i>
                     </NavLink>
                   </li>
                   <li className="list-inline-item">
-                    <NavLink className="btn-floating btn-md rgba-white-slight mx-1" to={""}>
-                      <i className="bi bi-twitter"></i>
+                    <NavLink className="btn-floating btn-md rgba-white-slight mx-1" to={""} title="Twitter">
+                      <i className="bi bi-twitter text-info"></i>
                     </NavLink>
                   </li>
                   <li className="list-inline-item">
-                    <NavLink className="btn-floating btn-md rgba-white-slight mx-1" to={""}>
-                      <i className="bi bi-google"></i>
+                    <NavLink className="btn-floating btn-md rgba-white-slight mx-1" to={""} title="Google">
+                      <i className="bi bi-google text-danger"></i>
                     </NavLink>
                   </li>
                   <li className="list-inline-item">
-                    <NavLink className="btn-floating btn-md rgba-white-slight mx-1" to={""}>
+                    <NavLink className="btn-floating btn-md rgba-white-slight mx-1" to={""} title="LinkedIn">
                       <i className="bi bi-linkedin"></i>
                     </NavLink>
                   </li>

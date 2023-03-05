@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "../Pages_css/Navbar.css";
 import i1 from "../Images/main-logo.png";
 import { NavLink } from 'react-router-dom';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import useDimensions from '../utils/useDimensions';
 import Button from '@mui/material/Button';
+import { ThemeContext } from '../context/Theme';
 
-export const Navbar = ({ theme, ToggleTheme }) => {
+export const Navbar = () => {
+    const {theme, ToggleTheme} = useContext(ThemeContext);
     const { width } = useDimensions();
 
     const [isSticky, setIsSticky] = useState(false);
@@ -106,9 +108,9 @@ const NavbarForWideScreen = ({ isSticky, handleOpen, hamburger, hamIcon, theme, 
                     <Button onClick={ToggleTheme}>
                         {
                             theme === "light" ?
-                                <i class="bi bi-moon-fill fs-5" style={{color:"#21a4bb"}}></i>
+                                <i className="bi bi-moon-fill fs-5" style={{color:"#21a4bb"}}></i>
                                 :
-                                <i class="bi bi-sun fs-5" style={{color:"#F6BE00"}}></i>
+                                <i className="bi bi-sun fs-5" style={{color:"#F6BE00"}}></i>
                         }
                     </Button>
                 </ul>
@@ -156,9 +158,9 @@ const NavbarForWideScreen = ({ isSticky, handleOpen, hamburger, hamIcon, theme, 
                     <Button onClick={ToggleTheme}>
                         {
                             theme === "light" ?
-                                <i class="bi bi-moon-fill fs-5" style={{color:"#21a4bb"}}></i>
+                                <i className="bi bi-moon-fill fs-5" style={{color:"#21a4bb"}}></i>
                                 :
-                                <i class="bi bi-sun fs-5" style={{color:"#F6BE00"}}></i>
+                                <i className="bi bi-sun fs-5" style={{color:"#F6BE00"}}></i>
                         }
                     </Button>
                 </ul>
@@ -198,9 +200,9 @@ const NavbarForSmallScreen = ({ handleOpen, hamburger, hamIcon, theme, ToggleThe
                     <Button onClick={ToggleTheme}>
                         {
                             theme === "light" ?
-                                <i class="bi bi-moon-fill fs-5" style={{color:"#21a4bb"}}></i>
+                                <i className="bi bi-moon-fill fs-5" style={{color:"#21a4bb"}}></i>
                                 :
-                                <i class="bi bi-sun fs-5" style={{color:"#F6BE00"}}></i>
+                                <i className="bi bi-sun fs-5" style={{color:"#F6BE00"}}></i>
                         }
                     </Button>
                 </div>

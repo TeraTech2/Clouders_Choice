@@ -1,5 +1,4 @@
-.homePage.theme-dark {
-    footer {
+    footer.theme-dark {
         background-color: var(--bg-dark);
 
         .footer-section {
@@ -8,29 +7,34 @@
             }
 
             p a,
-            p, i {
+            p,
+            i {
                 color: var(--text-light-3);
+
                 &:hover {
                     text-decoration: underline;
                 }
             }
-            p, i{
-                &:hover{
+
+            p,
+            i {
+                &:hover {
                     text-decoration: none;
                 }
             }
         }
-        hr{
+
+        hr {
             background-color: var(--bg-light);
         }
-        .footer-end{
+
+        .footer-end {
             color: var(--text-light-secondary);
         }
     }
-}
 
-.homePage.theme-light {
-    footer {
+
+    footer.theme-light {
         .footer-section {
             p {
                 a {
@@ -42,8 +46,8 @@
                 }
             }
         }
-        hr{
+
+        hr {
             background-color: var(--bg-dark);
         }
     }
-}

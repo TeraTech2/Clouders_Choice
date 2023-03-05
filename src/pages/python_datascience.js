@@ -9,11 +9,6 @@ import Testi from './testimonial.js';
 import Curriculu from './Curriculum.js';
 
 
-/*
-import buttons from './buttons.js';
-import Keyfeatures from './features.js';
-*/
-
 const Datascience = () => {
     return (
         <div className="data ds_wrapper">

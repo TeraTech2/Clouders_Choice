@@ -1,0 +1,16 @@
+.homeServicesWrapper.theme-dark{
+    background-color: var(--text-dark);
+    color: var(--bg-light-secondary);
+    padding: 3rem .5rem;
+    .homeServicesItem{
+        .homeServicesItemText{
+            p{
+                color: var(--text-light-3);
+            }
+        }
+    }
+}
+
+.homeServicesWrapper.theme-light{
+    padding: 3rem .5rem;
+}

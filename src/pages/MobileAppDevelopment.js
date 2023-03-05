@@ -1,39 +1,41 @@
-import React, { Component } from 'react'
-import "../Pages_css/MobileAppDevelopment.css";
-import { Link } from 'react-router-dom';
-import img1 from "../Images/Main_image.jpg";
+import React, { useContext } from 'react'
 import img2 from "../Images/Eficient-Resource-Management.svg";
 import img3 from "../Images/Scalable_Products.svg";
 import img4 from "../Images/Visual_Design.svg";
 import img5 from "../Images/Cross-Platform_Mobile_App_dev.svg";
 import img6 from "../Images/iOS_Mobile_App_dev.svg";
 import img7 from "../Images/Android_Mobile_App_dev.svg";
+import { NavLink } from 'react-router-dom';
+import { ThemeContext } from '../context/Theme';
 
 
-export default class MobileAppDevelopment extends Component {
-    render() {
-        return (
-            <div className='mobile'>
-                <div className="wrapper">
-                    <div className="mobile-imgDiv-content">
-                        <h4 className='imgDiv-heading'>Mobile Application Development Services</h4>
-                        <div className="line"></div><br />
-                        <p className='imgDiv-text d-none d-md-block'> TeraTech app development company
-                            creates products that win the hearts and minds of your customers. Whenever you are looking to leverage the power of mobile app
-                            development solutions, our experts are here to support you with
-                            this task. Modern technologies help businesses across all domains
-                            to grow revenues, win new competitive advantages and stand out
-                            with their products or services. It is exactly what our qualified and
-                            experienced mobile app developers do. </p>
-                        <button className="btn btn-primary">
-                            <a href="/Contact" className='text-decoration-none'>Contact Us</a>
-                        </button>
-                    </div>
+const MobileAppDevelopment = () => {
+
+    const {theme} = useContext(ThemeContext);
+
+    return (
+        <div className={`mobile_wrapper theme-${theme}`}>
+            <div className="mobile-imgDiv">
+                <div className="mobile-imgDiv-content">
+                    <h4 className='imgDiv-heading'>Mobile Application Development Services</h4>
+                    <div className="line"></div><br />
+                    <p className='imgDiv-text d-none d-md-block'> TeraTech app development company
+                        creates products that win the hearts and minds of your customers. Whenever you are looking to leverage the power of mobile app
+                        development solutions, our experts are here to support you with
+                        this task. Modern technologies help businesses across all domains
+                        to grow revenues, win new competitive advantages and stand out
+                        with their products or services. It is exactly what our qualified and
+                        experienced mobile app developers do. </p>
+                    <button className="btn btn-primary">
+                        <NavLink to="/Contact" className='text-decoration-none'>Contact Us</NavLink>
+                    </button>
                 </div>
+            </div>
 
 
-                {/* services */}
-                <div className="mob-services mt-4 mb-3 text-center">
+            {/* services */}
+            <div className="mob_services_wrapper">
+                <div className="mt-4 mb-3 text-center">
                     <h1 className="">Our Services</h1>
                     <h2>About Our App Development Services</h2>
                 </div>
@@ -73,55 +75,57 @@ export default class MobileAppDevelopment extends Component {
                         <img src={img4} className="img-responsive"></img>
                     </div>
                 </div>
+            </div>
 
 
-                {/* layer */}
-                <div className="layer mt-5 py-2">
-                    <h4 className='p-2 text-center'>Mobile App Development</h4>
-                    <h1 className='text-center'>Services We Provide</h1>
-                    
-                    <div className="layer1 mb-4">
-                        <div className="row justify-content-evenly align-items-start flex-column flex-column-reverse flex-sm-column flex-sm-column-reverse flex-md-row">
-                            <div className="col-sm-12 col-md-6">
-                                <p className='fs-4'>Cross-Platform App Development</p>
-                                <p className='text-justify'>Cross-platform applications often serve as a unique and cost-effective solution for companies. single codebase, ease of maintenance, reduced development costs are just a few benefits provided cross-platform solutions. TeraTech mobile application development services empower businesses and boost their performance</p>
-                            </div>
-                            <div className="col-sm-12 col-md-4 mb-1 text-center">
-                                <img src={img5} className="img-responsive ml-5 mt-2"></img>
-                            </div>
+            {/* layer */}
+            <div className="layer mt-5 py-2">
+                <h4 className='p-2 text-center mt-4'>Mobile App Development</h4>
+                <h1 className='text-center mb-5'>Services We Provide</h1>
+
+                <div className="layer1 mb-4">
+                    <div className="row justify-content-evenly align-items-start flex-column flex-column-reverse flex-sm-column flex-sm-column-reverse flex-md-row">
+                        <div className="col-sm-12 col-md-6">
+                            <p className='fs-4'>Cross-Platform App Development</p>
+                            <p className='text-justify'>Cross-platform applications often serve as a unique and cost-effective solution for companies. single codebase, ease of maintenance, reduced development costs are just a few benefits provided cross-platform solutions. TeraTech mobile application development services empower businesses and boost their performance</p>
+                        </div>
+                        <div className="col-sm-12 col-md-4 mb-1 text-center">
+                            <img src={img5} className="img-responsive ml-5 mt-2"></img>
                         </div>
                     </div>
+                </div>
 
-                    <div className="layer2 mb-4">
-                        <div className="row justify-content-evenly align-items-start flex-column flex-column-reverse flex-sm-column flex-sm-column-reverse flex-md-row">
-                            <div className="col-sm-12 col-md-6">
-                                <p className='fs-4'>iOS Mobile App Development</p>
-                                <p className='text-justify'>iPhone products are famous for their quality and elegant design.
-                                    Apple’s followers value premium quality they get, which means they are not ready to comprise it with application development
-                                    services. If you are looking for a mobile app development company to launch your next iOS app, rely on TeraTech experts.
-                                    With vast expertise in the field, we will create software to meet your users’ needs.</p>
-                            </div>
-                            <div className="col-sm-12 col-md-4 mb-1 text-center">
-                                <img src={img6} className="img-responsive pl-5 ml-5 mt-2"></img>
-                            </div>
+                <div className="layer2 mb-4">
+                    <div className="row justify-content-evenly align-items-start flex-column flex-column-reverse flex-sm-column flex-sm-column-reverse flex-md-row">
+                        <div className="col-sm-12 col-md-6">
+                            <p className='fs-4'>iOS Mobile App Development</p>
+                            <p className='text-justify'>iPhone products are famous for their quality and elegant design.
+                                Apple’s followers value premium quality they get, which means they are not ready to comprise it with application development
+                                services. If you are looking for a mobile app development company to launch your next iOS app, rely on TeraTech experts.
+                                With vast expertise in the field, we will create software to meet your users’ needs.</p>
+                        </div>
+                        <div className="col-sm-12 col-md-4 mb-1 text-center">
+                            <img src={img6} className="img-responsive pl-5 ml-5 mt-2"></img>
                         </div>
                     </div>
+                </div>
 
-                    <div className="layer3">
-                        <div className="row justify-content-evenly align-items-start flex-column flex-column-reverse flex-sm-column flex-sm-column-reverse flex-md-row">
-                            <div className="col-sm-12 col-md-6">
-                                <p className='fs-4'>Android Mobile App Development</p>
-                                <p className='text-justify'>Android is the most widespread operating system in the world. With 2.5 billion active Android users, you have
-                                    a great chance to extend your reach with our custom application development.
-                                    TeraTech experienced developers know how to make your app appealing and fascinating to the target audience.</p>
-                            </div>
-                            <div className="col-sm-12 col-md-4 mb-1 text-center">
-                                <img src={img7} className="img-responsive pl-5 ml-5 mt-2"></img>
-                            </div>
+                <div className="layer3">
+                    <div className="row justify-content-evenly align-items-start flex-column flex-column-reverse flex-sm-column flex-sm-column-reverse flex-md-row">
+                        <div className="col-sm-12 col-md-6">
+                            <p className='fs-4'>Android Mobile App Development</p>
+                            <p className='text-justify'>Android is the most widespread operating system in the world. With 2.5 billion active Android users, you have
+                                a great chance to extend your reach with our custom application development.
+                                TeraTech experienced developers know how to make your app appealing and fascinating to the target audience.</p>
+                        </div>
+                        <div className="col-sm-12 col-md-4 mb-1 text-center">
+                            <img src={img7} className="img-responsive pl-5 ml-5 mt-2"></img>
                         </div>
                     </div>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
+
+export default MobileAppDevelopment

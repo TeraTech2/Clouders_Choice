@@ -1,13 +1,12 @@
-import React, {useEffect, useRef } from 'react';
+import React, {useContext, useEffect, useRef } from 'react';
 import FutureScope from '../components/FutureScope';
 import CloudServices from '../components/CloudServices';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useOutletContext } from "react-router-dom";
-import Footer from '../components/Footer';
+import { ThemeContext } from '../context/Theme';
 
 const Home = () => {
-    const {theme} = useOutletContext();
+    const {theme} = useContext(ThemeContext);
 
     const controls = useAnimation();
     const ref = useRef(null);
@@ -41,7 +40,6 @@ const Home = () => {
 
             <CloudServices />
             <FutureScope />
-            <Footer />
         </div>
     )
 }

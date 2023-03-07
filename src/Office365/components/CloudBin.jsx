@@ -43,22 +43,20 @@ const data = [
 
 const CloudBin = () => {
     return (
-        <div className="row bg-body my-5">
+        <div className="row blogs_wrapper_container pt-5">
             <h1 className="fs-2 text-center">Why Clouders Choice?</h1>
-            <h4 className="mt-3 px-md-5 px-1 fs-6 text-secondary text-center"> IBN cloud management services make it easier to request, change, and support business services on premise, on demand, and from anywore</h4>
-            <div className="blogs_wrapper pt-3 pb-3">
+            <h4 className="mt-3 px-md-5 px-1 fs-6 text-center"> IBN cloud management services make it easier to request, change, and support business services on premise, on demand, and from anywore</h4>
+            <div className="blogs_wrapper py-5">
                 {
                     data.map((card, index) => {
                         return <div className='col-12 col-sm-8 col-md-6 col-lg-4' key={index}>
-                            <a href='#' className='text-decoration-none'>
-                                <div className="blog rounded shadow-lg mx-3 p-3 py-2 blog" key={index}>
-                                    <img
-                                        src={`https://source.unsplash.com/random/400x300?information technology?sign=${Math.random()}`}
-                                        className="img-fluid" alt={card?.title} width="100%"/>
-                                    <h1 className='fs-5 text-dark my-2'>{card?.title}</h1>
-                                    <p>{card?.desc}</p>
-                                </div>
-                            </a>
+                            <div className="blog rounded shadow-lg mx-3 p-3 blog" key={index}>
+                                <img
+                                    src={`https://source.unsplash.com/random/400x300?information technology?sign=${Math.random()}`}
+                                    className="img-fluid" alt={card?.title} width="100%" />
+                                <h1 className='fs-5 my-2'>{card?.title}</h1>
+                                <p>{card?.desc}</p>
+                            </div>
                         </div>
                     })
                 }

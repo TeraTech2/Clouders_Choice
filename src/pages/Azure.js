@@ -1,39 +1,36 @@
-import React, { Component } from 'react';
-import "../Pages_css/Azure.css";
-import Azure1 from "../Images/Azure.jpg";
+import React, { useContext } from 'react';
+import { ThemeContext } from '../context/Theme';
+import Azure1 from "../Images/Azure.png";
 
-export default class GCP extends Component {
-    render() {
-        return (
-        <div className='Azure'>
+const GCP = () => {
+    const { theme } = useContext(ThemeContext);
 
-            <h1>Microsoft Azure Cloud Services</h1>
-        	<div className='row1'>
-        		<div className='col1'>
+    return (
+        <div className={`azure_wrapper theme-${theme}`}>
+            <h2>Microsoft Azure Cloud Services</h2>
+            <div className='row1'>
 
-                <p>Microsoft Azure offers application life cycle and cloud maturity with innovative industry-proven solutions 
-                customized to meet the Enterprise Cloud Requirements. 
-                Azure Service Offerings for Cloud-Native Development, Cloud Security, and Cloud Integration.</p>
-                <ul>
-                <li>Cloud Architecture Selection</li>
-                <li>Cloud Solution and Platform Creation</li>
-                <li>Application Migration Plan</li>
-                <li>Continuous Integration and Continuous Delivery</li>
-                <li>Cloud Readiness Assessment</li>
-                <li>Data Migration Strategy Consulting</li>
+                <div className='col1 col-12 col-md-5'>
+                    <p>Microsoft Azure offers application life cycle and cloud maturity with innovative industry-proven solutions customized to meet the Enterprise Cloud Requirements.
+                        Azure Service Offerings for Cloud-Native Development, Cloud Security, and Cloud Integration.
+                    </p>
+                    <ul>
+                        <li>Cloud Architecture Selection</li>
+                        <li>Cloud Solution and Platform Creation</li>
+                        <li>Application Migration Plan</li>
+                        <li>Continuous Integration and Continuous Delivery</li>
+                        <li>Cloud Readiness Assessment</li>
+                        <li>Data Migration Strategy Consulting</li>
+                    </ul>
+                </div>
 
-                </ul>
-        		
-        		</div>
-        		<div className='col2'>
-                <img src={Azure1} alt=""/>
-        		</div>
-        	</div>
+                <div className='col2 col-12 col-md-6'>
+                    <img src={Azure1} alt="Azure image"/>
+                </div>
+
+            </div>
         </div>
+    );
+}
 
-
-
-        	);
-        }
-    }
-
+export default GCP

@@ -24,13 +24,13 @@ const Website = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={img13} className="d-block" alt="img1" width={'100%'} height={'100%'} />
+                        <img src={img13} className="d-block" alt="img1" width={'100%'} height={'100%'}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img14} className="d-block" alt="img2" width={'100%'} height={'100%'} />
+                        <img src={img14} className="d-block" alt="img2" width={'100%'} height={'100%'}/>
                     </div>
                     <div className="carousel-item">
-                        <img src={img15} className="d-block" alt="img3" width={'100%'} height={'100%'} />
+                        <img src={img15} className="d-block" alt="img3" width={'100%'} height={'100%'}/>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -45,9 +45,8 @@ const Website = () => {
 
 
 
-            <div className='website_content'>
+            <div className='website_content mt-5'>
                 <h1>WEB APPLICATION DEVELOPMENT SERVICES</h1>
-                <hr />
                 <h4 className='mb-4'>What We Do</h4>
 
                 <div className="content mb-5 row align-items-center d-flex justify-content-start justify-content-md-center">

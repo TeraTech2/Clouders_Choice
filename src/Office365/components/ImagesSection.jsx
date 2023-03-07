@@ -5,7 +5,7 @@ import Image3 from '../imgs/Image3/3.webp'
 
 const ImagesSection = () => {
   return (
-    <div className="container">
+    <div className="container images_section">
         <img src={Images} className="img-fluid" alt="migration" />
 
         <h1 className="text-center mt-5 fw-bold">How We Do It</h1>

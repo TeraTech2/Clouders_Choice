@@ -1,0 +1,104 @@
+.aws_wrapper.theme-dark {
+    background-color: var(--bg-dark);
+
+    .row1 {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        padding: 1rem;
+
+        .col1 {
+            p {
+                text-align: justify;
+                color: var(--text-light-secondary);
+            }
+
+            ul {
+                padding: 0;
+                background-color: var(--bg-dark);
+
+                li {
+                    margin-bottom: 1rem;
+                    list-style: none;
+                    padding: .4rem;
+                    background-color: var(--bg-dark-secondary);
+                    border-radius: 5px;
+                    color: var(--text-light);
+                }
+            }
+        }
+
+        .col2 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    h2 {
+        padding: 1.1rem 0;
+        text-align: center;
+        background-color: var(--heading);
+        color: var(--text-light-secondary);
+    }
+}
+
+.aws_wrapper.theme-light {
+    background-color: var(--bg-light);
+
+    .row1 {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        padding: 1rem;
+
+        .col1 {
+            p {
+                text-align: justify;
+                color: var(--text-dark);
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    margin-bottom: 1rem;
+                    list-style: none;
+                    padding: .4rem;
+                    background-color: #ffedb0;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .col2 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    h2 {
+        padding: 1.1rem 0;
+        text-align: center;
+        background-color: var(--logo-color);
+        color: var(--text-light);
+        text-shadow: 1px 1px 1px black;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .aws_wrapper{
+        .row1{
+            flex-direction: column !important;
+            .col1,.col2{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -43,7 +43,7 @@ const urlsToPrefetch = [
     "static/media/SQL_Server.25bfdcadd50b9710100e.png",
 
     // js
-    "static/js/bundle.js",
+    "static/js/main.e7a6fdb9",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
     "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js",

@@ -19,11 +19,31 @@ import ScrollToTop from "./components/ScrollToTop";
 import './sass/Theme/theme.css';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
+import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
+
+    // detect online/offline
+    const [online, setOnline] = useState(true);
+    useEffect(() => {
+        if (window) {
+            window.addEventListener("online", () => setOnline(true));
+            window.addEventListener("offline", () => setOnline(false));
+        }
+
+        return () => {
+            window.addEventListener("online", () => { });
+            window.addEventListener("offline", () => { });
+        }
+    }, [])
+
     return (
         <>
             <Router>
+                {
+                    !online && <OfflineComponent/>
+                }
                 <Navbar />
                 <ScrollToTop />
                 <Routes>
@@ -47,6 +67,20 @@ function App() {
             </Router>
         </>
     );
+}
+
+const OfflineComponent = () => {
+    return <div className="alert alert-danger alert-dismissible fade show d-flex justify-content-between align-items-start" role="alert">
+        <div>
+            <h4 className="alert-heading">Bad Network</h4>
+            <p>
+                Seems your internet connection is too slow, or you're Offline. Connect to a good network to make sure webapp functions properly.
+            </p>
+        </div>
+        <button type="button" className="btn-close btn btn-lg" data-bs-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"></span>
+        </button>
+    </div>
 }
 
 export default App;

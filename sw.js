@@ -32,7 +32,7 @@ const urlsToPrefetch = [
     "static/media/AWS.5faee6c36f18b9996b6b.png",
     "static/media/GCP.96ac8bac7e06fd62f888.png",
     "static/media/1.ef41481ed6b5423b9400.webp",
-    "media/2.a539ce7d49aa44639688.webp",
+    "static/media/2.a539ce7d49aa44639688.webp",
     "static/media/3.6cbd97257b16b528ac6e.webp",
     "static/media/image3.2cdb8bd757766fb9076d.png",
     "static/media/contactUS.e95de7a904ab7284db7a.jpg",
@@ -43,7 +43,7 @@ const urlsToPrefetch = [
     "static/media/SQL_Server.25bfdcadd50b9710100e.png",
 
     // js
-    "/static/js/bundle.js",
+    "static/js/bundle.js",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
     "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js",

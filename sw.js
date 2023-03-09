@@ -6,8 +6,8 @@ const urlsToPrefetch = [
 
     "/favicon.ico",
     "main-logo.png",
-    // '/static/css/main.c87a12be.css',
-    // '/static/js/main.5b505906.js',
+    '/static/css/main.c87a12be.css',
+    '/static/js/main.5b505906.js',
     '/static/media/ems3.0d280f248b30a22e8da6.PNG',
     '/static/media/image1.bbef3cf4349ad6bb3db5.jpg',
     '/static/media/Main_image.6db544cbf03454aa4dfb.jpg',

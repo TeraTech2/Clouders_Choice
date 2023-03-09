@@ -52,7 +52,7 @@ const urlsToPrefetch = [
     // js
     '/static/js/main.5b505906.js.map',
     '/static/css/main.c87a12be.css.map',
-    "static/js/bundle.js",
+    // "static/js/bundle.js",
     "manifest.json",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
     "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",

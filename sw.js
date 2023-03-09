@@ -48,7 +48,7 @@ const urlsToPrefetch = [
     '/static/media/Android_Mobile_App_dev.f51e1d1a028bfea46c9075812a0db373.svg',
     '/static/media/iOS_Mobile_App_dev.dfac47b61232480028aa723e608d1fef.svg',
     '/static/media/ems6.9d88ce3b9b779634539b.PNG',
-    
+
     // js
     '/static/js/main.5b505906.js.map',
     '/static/css/main.c87a12be.css.map',
@@ -75,11 +75,18 @@ this.addEventListener("install", (event) => {
 });
 
 this.addEventListener("fetch", (event) => {
-    if(!navigator.onLine){
-        event.respondWith(caches.match(event.request)).then(res => {
-            if (res) {
-                return res
-            }
+    let url = new URL(event.request.url);
+    console.log(`You're ${navigator.onLine} and your path is ${url.pathname}`);
+    if (!navigator.onLine) {
+        caches.match(event.request).then(function (resp) {
+            return resp || fetch(event.request).then(async function (response) {
+                return caches.open(appCache).then(function (cache) {
+                    if (event.request.method === 'GET') {
+                        cache.put(event.request, response.clone());
+                    }
+                    return response;
+                });
+            });
         })
     }
 })

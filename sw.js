@@ -1,6 +1,13 @@
 const app = "TeraTech";
 const urlsToPrefetch = [
-    '/static/js/main.84f5acde.js',
+    // images & pages
+    "/",
+    "/index.html",
+
+    "/favicon.ico",
+    "main-logo.png",
+    '/static/css/main.c87a12be.css',
+    '/static/js/main.5b505906.js',
     '/static/media/ems3.0d280f248b30a22e8da6.PNG',
     '/static/media/image1.bbef3cf4349ad6bb3db5.jpg',
     '/static/media/Main_image.6db544cbf03454aa4dfb.jpg',
@@ -41,16 +48,18 @@ const urlsToPrefetch = [
     '/static/media/Android_Mobile_App_dev.f51e1d1a028bfea46c9075812a0db373.svg',
     '/static/media/iOS_Mobile_App_dev.dfac47b61232480028aa723e608d1fef.svg',
     '/static/media/ems6.9d88ce3b9b779634539b.PNG',
-    '/index.html',
-    '/static/js/main.84f5acde.js.map',
+    
+    // js
+    '/static/js/main.5b505906.js.map',
+    '/static/css/main.c87a12be.css.map',
+    "static/js/bundle.js",
+    "manifest.json",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
     "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js",
-    
+
     // fonts & icons & css
-    '/static/css/main.c87a12be.css',
-    '/static/css/main.c87a12be.css.map',
-    "https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap",
+    "static/css/main.c87a12be.css",
     "https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2",
     "/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"

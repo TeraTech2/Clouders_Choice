@@ -13,7 +13,6 @@ import Courses from './pages/Courses.js';
 import Datascience from './pages/python_datascience.js';
 import Python from './pages/python.js';
 import ML from './pages/machinelearning.js';
-import Web from './pages/webdevlop.js';
 import About from "./pages/About";
 import ScrollToTop from "./components/ScrollToTop";
 import './sass/Theme/theme.css';
@@ -60,7 +59,6 @@ function App() {
                     <Route path='/Datascience' exact element={<Datascience />} />
                     <Route path='/Python' exact element={<Python />} />
                     <Route path='/ML' exact element={<ML />} />
-                    <Route path='/Web' exact element={<Web />} />
                     <Route path="/Office365" element={<Office365Home />}></Route>
                 </Routes>
                 <Footer />

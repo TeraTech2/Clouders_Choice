@@ -69,7 +69,9 @@ this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(app)
             .then(cache => {
-                return cache.addAll(urlsToPrefetch);
+                return cache.addAll(urlsToPrefetch.map((urlToPrefetch) => {
+                    return new Request(urlToPrefetch, { mode: "no-cors" });
+                }));
             })
     )
 });

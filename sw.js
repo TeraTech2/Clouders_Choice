@@ -69,7 +69,7 @@ this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(app)
             .then(cache => {
-                cache.addAll(urlsToPrefetch);
+                return cache.addAll(urlsToPrefetch);
             })
     )
 });

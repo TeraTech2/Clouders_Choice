@@ -42,12 +42,12 @@ const urlsToPrefetch = [
     '/static/media/2.3cfaf857fa65b48d1982.png',
     '/static/media/7.9b3d7d884f7d674fc9b1.png',
     '/static/media/ems6.9d88ce3b9b779634539b.PNG',
-    // '/static/media/Visual_Design.a73037e54c9e1e182fbd8a1fc69011e3.svg',
-    // '/static/media/Scalable_Products.d069ef340136611861f7c83499829dfd.svg',
-    // '/static/media/Cross-Platform_Mobile_App_dev.bc790047962f0a4b7cc055bd2c2dbd50.svg',
-    // '/static/media/Eficient-Resource-Management.21da62fb93c693cba563a5ef1ec4c98a.svg',
-    // '/static/media/Android_Mobile_App_dev.f51e1d1a028bfea46c9075812a0db373.svg',
-    // '/static/media/iOS_Mobile_App_dev.dfac47b61232480028aa723e608d1fef.svg',
+    '/static/media/Visual_Design.a73037e54c9e1e182fbd8a1fc69011e3.svg',
+    '/static/media/Scalable_Products.d069ef340136611861f7c83499829dfd.svg',
+    '/static/media/Cross-Platform_Mobile_App_dev.bc790047962f0a4b7cc055bd2c2dbd50.svg',
+    '/static/media/Eficient-Resource-Management.21da62fb93c693cba563a5ef1ec4c98a.svg',
+    '/static/media/Android_Mobile_App_dev.f51e1d1a028bfea46c9075812a0db373.svg',
+    '/static/media/iOS_Mobile_App_dev.dfac47b61232480028aa723e608d1fef.svg',
     
     // js
     '/static/js/main.5b505906.js.map',

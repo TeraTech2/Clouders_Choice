@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c87a12be.css",
+    "main.css": "/static/css/main.2b0f2780.css",
     "main.js": "/static/js/main.5b505906.js",
     "static/media/ems3.PNG": "/static/media/ems3.0d280f248b30a22e8da6.PNG",
     "static/media/image1.jpg": "/static/media/image1.bbef3cf4349ad6bb3db5.jpg",
@@ -43,11 +43,11 @@
     "static/media/iOS_Mobile_App_dev.svg": "/static/media/iOS_Mobile_App_dev.dfac47b61232480028aa723e608d1fef.svg",
     "static/media/ems6.PNG": "/static/media/ems6.9d88ce3b9b779634539b.PNG",
     "index.html": "/index.html",
-    "main.c87a12be.css.map": "/static/css/main.c87a12be.css.map",
+    "main.2b0f2780.css.map": "/static/css/main.2b0f2780.css.map",
     "main.5b505906.js.map": "/static/js/main.5b505906.js.map"
   },
   "entrypoints": [
-    "static/css/main.c87a12be.css",
+    "static/css/main.2b0f2780.css",
     "static/js/main.5b505906.js"
   ]
 }

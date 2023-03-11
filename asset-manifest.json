@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b0f2780.css",
-    "main.js": "/static/js/main.5b505906.js",
+    "main.css": "/static/css/main.2bad3d2f.css",
+    "main.js": "/static/js/main.b2716a78.js",
     "static/media/ems3.PNG": "/static/media/ems3.0d280f248b30a22e8da6.PNG",
     "static/media/image1.jpg": "/static/media/image1.bbef3cf4349ad6bb3db5.jpg",
     "static/media/Main_image.jpg": "/static/media/Main_image.6db544cbf03454aa4dfb.jpg",
     "static/media/image3.png": "/static/media/image3.2cdb8bd757766fb9076d.png",
     "static/media/webdevelopment.jpg": "/static/media/webdevelopment.52e5056a7709a1dcaad9.jpg",
+    "static/media/3.png": "/static/media/3.e836b6db9d420ec808bd.png",
     "static/media/ems5.PNG": "/static/media/ems5.283d5b18ce1f5280be9b.PNG",
     "static/media/ems4.PNG": "/static/media/ems4.6b8e93906a5c96421b42.PNG",
+    "static/media/5.png": "/static/media/5.bdf820b372a5c68b468b.png",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/1.png": "/static/media/1.38cb532db017649f08ce.png",
+    "static/media/4.png": "/static/media/4.044e22fc8de89f4dabc6.png",
+    "static/media/6.png": "/static/media/6.1f31138e9827ea7d6a37.png",
     "static/media/GCP.png": "/static/media/GCP.96ac8bac7e06fd62f888.png",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "static/media/AWS.png": "/static/media/AWS.5faee6c36f18b9996b6b.png",
@@ -23,19 +28,10 @@
     "static/media/2.webp": "/static/media/2.a539ce7d49aa44639688.webp",
     "static/media/Devops.png": "/static/media/Devops.18005bf9ddab27f7a4d4.png",
     "static/media/ems1.PNG": "/static/media/ems1.96b1a0a4f6b824c59389.PNG",
+    "static/media/2.png": "/static/media/2.d288ee02eb5c7e399b11.png",
     "static/media/3.webp": "/static/media/3.6cbd97257b16b528ac6e.webp",
-    "static/media/support.jpg": "/static/media/support.00451e8618b74c2cd9ec.jpg",
-    "static/media/flexible-schedule.jpg": "/static/media/flexible-schedule.c4b63035c6820cef58a5.jpg",
-    "static/media/instructor-led.jpg": "/static/media/instructor-led.330cce61f17190086727.jpg",
-    "static/media/upgrade.jpg": "/static/media/upgrade.d2da8d1646ba4f251439.jpg",
-    "static/media/certification.jpg": "/static/media/certification.d681a9b11893f7785d68.jpg",
-    "static/media/exercises.jpg": "/static/media/exercises.59fc677e16d9dc4a995f.jpg",
-    "static/media/self-pace-video.jpg": "/static/media/self-pace-video.ab3af54e389037bbe7bb.jpg",
     "static/media/Visual_Design.svg": "/static/media/Visual_Design.a73037e54c9e1e182fbd8a1fc69011e3.svg",
     "static/media/SQL_Server.png": "/static/media/SQL_Server.25bfdcadd50b9710100e.png",
-    "static/media/8.png": "/static/media/8.7dd524f1946ff4f1db88.png",
-    "static/media/2.png": "/static/media/2.3cfaf857fa65b48d1982.png",
-    "static/media/7.png": "/static/media/7.9b3d7d884f7d674fc9b1.png",
     "static/media/Scalable_Products.svg": "/static/media/Scalable_Products.d069ef340136611861f7c83499829dfd.svg",
     "static/media/Cross-Platform_Mobile_App_dev.svg": "/static/media/Cross-Platform_Mobile_App_dev.bc790047962f0a4b7cc055bd2c2dbd50.svg",
     "static/media/Eficient-Resource-Management.svg": "/static/media/Eficient-Resource-Management.21da62fb93c693cba563a5ef1ec4c98a.svg",
@@ -43,11 +39,11 @@
     "static/media/iOS_Mobile_App_dev.svg": "/static/media/iOS_Mobile_App_dev.dfac47b61232480028aa723e608d1fef.svg",
     "static/media/ems6.PNG": "/static/media/ems6.9d88ce3b9b779634539b.PNG",
     "index.html": "/index.html",
-    "main.2b0f2780.css.map": "/static/css/main.2b0f2780.css.map",
-    "main.5b505906.js.map": "/static/js/main.5b505906.js.map"
+    "main.2bad3d2f.css.map": "/static/css/main.2bad3d2f.css.map",
+    "main.b2716a78.js.map": "/static/js/main.b2716a78.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b0f2780.css",
-    "static/js/main.5b505906.js"
+    "static/css/main.2bad3d2f.css",
+    "static/js/main.b2716a78.js"
   ]
 }

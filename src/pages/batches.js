@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pages_css/batches.css';
 
 const Batch = () => {
     return (

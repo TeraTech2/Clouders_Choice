@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pages_css/testimonial.css';
 import google from '../Images/google.png';
 import face from '../Images/facebook.png';
 import jd from '../Images/justdial.png';

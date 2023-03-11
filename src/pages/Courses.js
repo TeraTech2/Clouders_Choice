@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pages_css/courses.css';
 import Searching from './search';
 
 const Courses = () => {

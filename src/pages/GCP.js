@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import "../Pages_css/GCP.css";
 import GCP1 from "../Images/GCP.png";
 import { ThemeContext } from '../context/Theme';
 

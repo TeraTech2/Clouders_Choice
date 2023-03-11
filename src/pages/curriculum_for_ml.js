@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pages_css/Curriculum.css';
 
 
 class Curriculuml extends React.Component{

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pages_css/Curriculum.css';
 
 
 class Curriculupy extends React.Component{

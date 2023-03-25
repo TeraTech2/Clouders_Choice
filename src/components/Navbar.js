@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import "../Pages_css/Navbar.css";
-import i1 from "../Images/main-logo.png";
+import main_logo from "../Images/main-logo.png";
+import main_logo2 from "../Images/main-logo2.png";
 import { NavLink } from 'react-router-dom';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import useDimensions from '../utils/useDimensions';
@@ -51,7 +52,7 @@ export const Navbar = () => {
             <div className='d-flex flex-row justify-content-between align-items-center logo-div'
                 style={{ position: "sticky", top: 0, left: 0, zIndex: 100 }}>
                 <NavLink className="nav-link" to="/">
-                    <img src={i1} width="80px" alt=""></img>
+                    <img src={theme == "light" ? main_logo : main_logo2} width="80px" alt=""></img>
                 </NavLink>
                 <button className='btn hamburger' disabled={hamburger} style={{ boxShadow: "none" }} onClick={handleOpen}>
                     <i className={`bi fs-2 bi-list`}></i>
@@ -68,7 +69,7 @@ const NavbarForWideScreen = ({ isSticky, handleOpen, hamburger, hamIcon, theme, 
         <div className='w-100 d-flex align-items-center justify-content-between'>
             <div className="nav-logo">
                 <NavLink className="nav-link" to="/">
-                    <img src={i1} width="90px" alt=""></img>
+                    <img src={theme == "light" ? main_logo : main_logo2} width="90px" alt=""></img>
                 </NavLink>
             </div>
 
@@ -186,7 +187,7 @@ const NavbarForSmallScreen = ({ handleOpen, hamburger, hamIcon, theme, ToggleThe
         <nav className={`nav-mobile ${hamburger && "active"}`}>
             <div className="nav-mobile-header d-flex flex-row justify-content-between align-items-center">
                 <NavLink className="nav-link" to="/" onClick={handleOpen}>
-                    <img src={i1} width="70px" alt="logo"></img>
+                    <img src={theme == "light" ? main_logo : main_logo2} width="70px" alt="logo"></img>
                 </NavLink>
 
                 <button className='btn hamburger' style={{ boxShadow: "none" }} onClick={handleOpen}>

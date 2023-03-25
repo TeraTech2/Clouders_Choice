@@ -2,10 +2,11 @@ const app = "TeraTech";
 const urlsToPrefetch = [
 
     '/static/css/main.5b8f271e.css',
-  '/static/js/main.dddb00e0.js',
+  '/static/js/main.70bc8980.js',
   '/static/media/ems3.0d280f248b30a22e8da6.PNG',
   '/static/media/image1.bbef3cf4349ad6bb3db5.jpg',
   '/static/media/Main_image.6db544cbf03454aa4dfb.jpg',
+  '/static/media/main-logo2.dc8b69a2ada602675eb6.png',
   '/static/media/image3.2cdb8bd757766fb9076d.png',
   '/static/media/webdevelopment.52e5056a7709a1dcaad9.jpg',
   '/static/media/3.e836b6db9d420ec808bd.png',
@@ -20,7 +21,6 @@ const urlsToPrefetch = [
   '/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2',
   '/static/media/AWS.5faee6c36f18b9996b6b.png',
   '/static/media/Azure.31fc8d9dce9130a90303.png',
-  '/static/media/main-logo.f09f957e16d50c0b14ed.png',
   '/static/media/ems2.dc369dd123142a5ff25e.PNG',
   '/static/media/MobileAppDevelopment.2c408b3a4f03d3aa3dea.jpg',
   '/static/media/contactUS.e95de7a904ab7284db7a.jpg',
@@ -31,6 +31,7 @@ const urlsToPrefetch = [
   '/static/media/ems1.96b1a0a4f6b824c59389.PNG',
   '/static/media/2.d288ee02eb5c7e399b11.png',
   '/static/media/3.6cbd97257b16b528ac6e.webp',
+  '/static/media/main-logo.b6ef80a98861a499dca7.png',
   '/static/media/Visual_Design.a73037e54c9e1e182fbd8a1fc69011e3.svg',
   '/static/media/SQL_Server.25bfdcadd50b9710100e.png',
   '/static/media/Scalable_Products.d069ef340136611861f7c83499829dfd.svg',
@@ -41,7 +42,7 @@ const urlsToPrefetch = [
   '/static/media/ems6.9d88ce3b9b779634539b.PNG',
   '/index.html',
   '/static/css/main.5b8f271e.css.map',
-  '/static/js/main.dddb00e0.js.map',
+  '/static/js/main.70bc8980.js.map',
 
     /*--------------------------------------------------------------------------------------------
                                     DON'T TOUCH THESE BELOW FILES !!!

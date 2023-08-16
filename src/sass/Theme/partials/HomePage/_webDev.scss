@@ -14,28 +14,62 @@
     }
 
     .website_content {
-        h1,h4,
-        >div>div p{
-            text-align: center;
+
+        h1,
+        h4,
+        >div>div p {
+            text-align: justify;
             color: var(--text-light-secondary);
             margin-top: .3rem;
             text-shadow: none;
         }
+
+        >.content {
+            flex: 1;
+
+            >div {
+                margin: 2rem 1rem;
+                background-color: var(--bg-dark-secondary);
+
+                div {
+                    margin-top: .5rem;
+                    padding: 0 .5rem;
+                    h5 {
+                        text-align: center;
+                        color: var(--text-light-secondary);
+                    }
+                }
+            }
+        }
     }
-    
-    .details, .advantages{
+
+    .details,
+    .advantages {
         background-color: var(--text-dark);
         padding: 1rem 0;
-        h5{
+
+        h5 {
             text-shadow: none;
             color: var(--text-light-secondary);
         }
-        div div p{
-            text-align: start;
+
+        p {
+            color: var(--text-light-3);
         }
-        div div .fw-bold{
-            text-shadow: none;
+
+        .advantage {
+            background-color: var(--bg-dark-secondary);
+            margin: 1rem .5rem;
+            padding: 1rem 1.5rem;
+            p {
+                text-align: justify;
+                color: var(--text-light-3);
+            }
+            @media screen and (max-width:570px) {
+                margin: 1rem 0rem;
+            }
         }
+
     }
 }
 
@@ -55,24 +89,56 @@
     }
 
     .website_content {
-        h1,h4,
-        >div>div p{
-            text-align: center;
+        background-color: var(--bg-light-secondary);
+        h1,
+        h4,
+        >div>div p {
+            text-align: justify;
             color: var(--text-dark);
             margin-top: .3rem;
             text-shadow: none;
         }
-    }
-    
-    .details, .advantages{
-        background-color: var(--bg-light);
-        padding: 1rem 0;
-        h5{
+
+        >.content {
+            flex: 1;
+
+            >div {
+                margin: 2rem 1rem;
+                background-color: var(--text-light);
+                box-shadow: 0 3px 10px 0px #0000001f;
+
+                div {
+                    margin-top: .5rem;
+                    padding: 0 .5rem;
+                    h5 {
+                        text-align: center;
+                        color: var(--text-dark);
+                    }
+                }
+            }
+        }
+
+        .details,
+        .advantages {
+            background-color: var(--bg-light-secondary);
+            padding: 1rem 0;
+            .advantage {
+                background-color: var(--bg-light);
+                margin: 1rem .5rem;
+                padding: 1rem 1.5rem;
+                p{
+                    color: var(--text-dark);
+                    text-align: justify;
+                }
+                @media screen and (max-width:570px) {
+                    margin: 1rem 0rem;
+                }
+            }
+        }
+
+        h5 {
             text-shadow: none;
             color: var(--text-dark);
-        }
-        div div p{
-            text-align: start;
         }
     }
 }

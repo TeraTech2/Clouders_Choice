@@ -16,7 +16,7 @@ const Home = () => {
 
                 <ImagesSection />
 
-                <CloudBin />
+                {/* <CloudBin /> */}
             </div>
         </div>
     )

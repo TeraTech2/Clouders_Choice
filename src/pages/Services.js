@@ -1,5 +1,4 @@
  import React from 'react';
-import "../Pages_css/Services.css";
 import img1 from "../Images/image1.jpg";
 import img2 from "../Images/image2.jpg";
 import img3 from "../Images/image3.png";

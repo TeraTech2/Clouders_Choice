@@ -6,7 +6,6 @@ import instructor from '../Images/instructor-led.jpg';
 import support from '../Images/support.jpg';
 import selfpace from '../Images/self-pace-video.jpg';
 import upgrade from '../Images/upgrade.jpg';
-import '../Pages_css/features.css';
 
 const Feature = () => {
     return (

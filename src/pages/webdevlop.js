@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pages_css/python_datascience.css';
 import Feature from './Features.js';
 import Projectweb from './projects_for_web.js';
 import Certify from './certification.js';

@@ -16,7 +16,7 @@ const BlogTemplete = ({ BlogData, className }) => {
       </div>
 
       <div className="mt-3 px-2 blog_content row align-items-start">
-        <div className="main-content col-xs-10 col-md-7 col-lg-8">
+        <div className="main-content col-xs-12 col-md-12 col-lg-12">
           {
             BlogData.data.map(data => {
               return <div className="item mb-4" id={`${data.title}`}>
@@ -29,7 +29,7 @@ const BlogTemplete = ({ BlogData, className }) => {
           }
         </div>
 
-        <aside className="d-none d-md-block side-navigation col-md-4 col-lg-3 mx-auto">
+        {/* <aside className="d-none d-md-block side-navigation col-md-4 col-lg-3 mx-auto">
           <h4 className='text-center pt-3'>Contents</h4>
           <hr />
           <div className="side-navigation-links mt-2">
@@ -41,7 +41,7 @@ const BlogTemplete = ({ BlogData, className }) => {
               })
             }
           </div>
-        </aside>
+        </aside> */}
       </div>
 
     </div>

@@ -3,7 +3,7 @@ import axios from "axios";
 import { ThemeContext } from "../context/Theme";
 
 const Contact = () => {
-  const {theme} = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const err = useRef("");
 
   const [contactData, setContactData] = useState({
@@ -60,21 +60,26 @@ const Contact = () => {
     if (validate()) {
       try {
         axios
-          .post("http://localhost:7007/contact", contactData)
+          .post("https://nw7wqza3q5.execute-api.ap-south-1.amazonaws.com", contactData, {
+            headers: {
+              "Access-Control-Allow-Origin": "*"
+            }
+          })
           .then((res) => {
+            console.log(res, "response")
             if (res.data.success === true) {
-              err.current.innerText = "Successfully sent your details!";
+              err.current.innerText = "Successfully sent your query!";
               err.current.style.color = "green";
             } else {
               err.current.innerText = res.data.msg;
               err.current.style.color = "red";
             }
           })
-          .catch((err) => {
+          .catch((error) => {
             err.current.innerText = "Internal Error Occurred!";
             err.current.style.color = "red";
           });
-      } catch (err) {
+      } catch (error) {
         err.current.innerText = "Internal Server Error Occurred!";
       }
     }
@@ -93,72 +98,72 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-wrapper">
-        <div className="form">
-          <form method="post" autocomplete="off">
-            <p
-              ref={err}
-              style={{ textAlign: "center", color: "red" }}>
-            </p>
+          <div className="form">
+            <form method="post" autocomplete="off">
+              <p
+                ref={err}
+                style={{ textAlign: "center", color: "red" }}>
+              </p>
 
-            <label htmlFor="fname">Name *</label>
-            <input
-              type="text"
-              placeholder="Full Name"
-              name="name"
-              value={contactData.name}
-              onChange={UpdateData}
-              required
-              autoComplete="asdasd"
-            />
-            <br />
-            <label htmlFor="lname">Email *</label>
-            <br />
-            <input
-              type="email"
-              placeholder="Email Id"
-              name="email"
-              value={contactData.email}
-              onChange={UpdateData}
-              required
-              autocomplete="off"
-            />
-            <br />
-            <label htmlFor="fname">Contact *</label>
-            <br />
-            <input
-              type="text"
-              placeholder="Contact Number"
-              name="contact"
-              value={contactData.contact}
-              onChange={UpdateData}
-              required
-              autocomplete="off"
-            />
-            <br />
-            <label htmlFor="lname">Message *</label>
-            <br />
-            <textarea
-              placeholder="Please share your requirements/queries here"
-              rows="4"
-              cols="50"
-              name="msg"
-              value={contactData.msg}
-              onChange={UpdateData}
-              required
-              autocomplete="off"
-              maxLength={260}
-            />
-            <br />
-            <br />
-            <input
-              type="button"
-              className="btn"
-              value="Submit"
-              onClick={SubmitData}
-            ></input>
-          </form>
+              <label htmlFor="fname">Name *</label>
+              <input
+                type="text"
+                placeholder="Full Name"
+                name="name"
+                value={contactData.name}
+                onChange={UpdateData}
+                required
+                autoComplete="asdasd"
+              />
+              <br />
+              <label htmlFor="lname">Email *</label>
+              <br />
+              <input
+                type="email"
+                placeholder="Email Id"
+                name="email"
+                value={contactData.email}
+                onChange={UpdateData}
+                required
+                autocomplete="off"
+              />
+              <br />
+              <label htmlFor="fname">Contact *</label>
+              <br />
+              <input
+                type="text"
+                placeholder="Contact Number"
+                name="contact"
+                value={contactData.contact}
+                onChange={UpdateData}
+                required
+                autocomplete="off"
+              />
+              <br />
+              <label htmlFor="lname">Message *</label>
+              <br />
+              <textarea
+                placeholder="Please share your requirements/queries here"
+                rows="4"
+                cols="50"
+                name="msg"
+                value={contactData.msg}
+                onChange={UpdateData}
+                required
+                autocomplete="off"
+                maxLength={260}
+              />
+              <br />
+              <br />
+              <input
+                type="button"
+                className="btn"
+                value="Submit"
+                onClick={SubmitData}
+              ></input>
+            </form>
+          </div>
         </div>
-      </div>
       </div>
 
     </div>

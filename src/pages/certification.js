@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pages_css/certification.css';
 
 const Certify = (props) => {
     return (
